@@ -44,6 +44,11 @@
 .about-main-content-revolt .about-main-content--revolt-center ul li img{
     height: 250px;
     width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.about-main-content-revolt .about-main-content--revolt-center ul li img:hover{
+    transform: scale(1.03);
 }
 
 .about-main-content-revolt .about-main-content--revolt-center ul li h3{

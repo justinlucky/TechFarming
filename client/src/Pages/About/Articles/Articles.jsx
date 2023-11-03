@@ -2,11 +2,12 @@ import React from 'react'
 import './Articles.css';
 import { Link } from 'react-router-dom';
 import {FaCaretRight} from 'react-icons/fa'
+import Agriculture from '../../../Assets/Images/Empower5.jpg'
 
 const Articles = () => {
     const articles = [
         {
-            image:'',
+            image:Agriculture,
             category:'Agriculture',
             time:'5',
             title:'Boost Your Crop Yield with Advanced Techniques',
@@ -16,7 +17,7 @@ const Articles = () => {
             imageAlt:'Agriculture',
         },
         {
-            image:'',
+            image:Agriculture,
             category:'Technology',
             time:'5',
             title:'The Future of Smart Farming: IoT and Automation',
@@ -26,7 +27,7 @@ const Articles = () => {
             imageAlt:'Agriculture Technologies',
         },
         {
-            image:'',
+            image:Agriculture,
             category:'Hilly Region Farming',
             time:'10',
             title:'Implementing Eco-Friendly Practices on farm which are located at hilly regions',
@@ -54,8 +55,8 @@ const Articles = () => {
                             <p>{article.time}&nbsp;&nbsp;min red</p>
                         </div>
                         <h3>{article.title}</h3>
-                        <p>{article.description}</p>
-                        <Link to={article.link}>{article.linkText}<FaCaretRight/></Link>
+                        <p className='desc'>{article.description}</p>
+                        <Link className='open-blog' to={article.link}>{article.linkText}<FaCaretRight/></Link>
                     </li>
                 ))}
             </ul>
