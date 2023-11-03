@@ -1,0 +1,89 @@
+#logout-sad .logout{
+    background-color: var(--primary-color);
+    padding: 10px 25px;
+    border: 1px solid var(--primary-color);
+    color: var(--text-dark);
+    border-radius: 3px;
+    transition: all .5s ease-in-out;
+}
+
+#logout-sad .logout:hover{
+    background-color: var(--text-dark);
+    color: var(--primary-color);
+}
+
+#logout-sad .logout-modal{
+    background-color:var(--background-opacity);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+}
+
+#logout-sad .logout-modal .logout-modal-content{
+    background-color: var(--background-color2);
+    padding: 30px 50px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 10px 20px 10px var( --darker-gray);
+}
+
+#logout-sad .logout-modal .logout-modal-content p{
+    color: var(--text-dark);
+}
+
+#logout-sad .logout-modal .logout-modal-content p::selection{
+    background-color: var(--background-color5);
+}
+
+#logout-sad .logout-modal .logout-modal-content .modal-buttons{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+#logout-sad .logout-modal .logout-modal-content .modal-buttons button{
+    padding: 10px 25px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#logout-sad .logout-modal .logout-modal-content .modal-buttons button:nth-child(1){
+    background-color: var(--button-secondary-hover);
+    color: var(--text-dark);
+    border: 1px solid var(--button-secondary-hover);
+    transition: all .5s ease-in-out;
+}
+
+#logout-sad .logout-modal .logout-modal-content .modal-buttons button:nth-child(1):hover{
+    background-color: var(--text-dark);
+    color: var(--button-secondary-hover);
+    border: 1px solid var(--button-secondary-hover);
+}
+
+#logout-sad .logout-modal .logout-modal-content .modal-buttons button:nth-child(2){
+    background-color: var(--button-tertiary-hover);
+    color: var(--text-dark);
+    border: 1px solid var(--button-tertiary-hover);
+    transition: all .5s ease-in-out;
+}
+
+#logout-sad .logout-modal .logout-modal-content .modal-buttons button:nth-child(2):hover{
+    background-color: var(--text-dark);
+    color: var(--button-tertiary-hover);
+    border: 1px solid var(--button-tertiary-hover);
+}
+
+@media only screen and (max-width: 600px) {
+    #logout-sad .logout-modal .logout-modal-content{
+        background-color: var(--background-color2);
+        padding: 20px 40px;
+        border-radius: 10px;
+    }
+}

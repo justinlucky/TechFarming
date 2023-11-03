@@ -1,0 +1,197 @@
+.home-container-content-contact {
+    display: flex;
+    flex-direction: column;
+    padding: 25px 20px;
+}
+
+.home-container-content-contact .home-container-content-contact-top {
+    display: flex;
+    flex-direction: column;
+}
+
+.home-container-content-contact .home-container-content-contact-top h2 {
+    color: var(--button-secondary-text);
+    font-size: 37px;
+}
+
+.home-container-content-contact .home-container-content-contact-top p {
+    color: var(--light-gray);
+}
+
+.home-container-content-contact .home-container-content-contact-top p a {
+    color: var(--color-aqua);
+    font-size: larger;
+    text-decoration: none;
+}
+
+.home-container-content-contact .home-container-content-contact-bottom {
+    display: flex;
+    align-items: center;
+}
+
+.home-container-content-contact .home-container-content-contact-bottom .home-container-content-contact-bottom-left {
+    flex: 1;
+}
+
+.home-container-content-contact .home-container-content-contact-bottom .home-container-content-contact-bottom-left ul {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: -40px;
+}
+
+.home-container-content-contact .home-container-content-contact-bottom .home-container-content-contact-bottom-left ul li {
+    display: flex;
+    flex-direction: column;
+}
+
+.home-container-content-contact .home-container-content-contact-bottom .home-container-content-contact-bottom-left ul li:first-child :first-child {
+    color: var(--light-gray);
+    font-size: 24px;
+}
+
+.home-container-content-contact .home-container-content-contact-bottom .home-container-content-contact-bottom-left ul li:first-child a :nth-child(1) {
+    display: none;
+}
+
+.home-container-content-contact .home-container-content-contact-bottom .home-container-content-contact-bottom-left ul li:nth-child(2) a :nth-child(1) {
+    display: none;
+}
+
+.home-container-content-contact .home-container-content-contact-bottom .home-container-content-contact-bottom-left ul li:nth-child(2) :first-child {
+    color: var(--color-aqua);
+    font-size: 24px;
+}
+
+.home-container-content-contact .home-container-content-contact-bottom .home-container-content-contact-bottom-left ul li:nth-child(3) :first-child {
+    color: var(--color-purple);
+    font-size: 24px;
+}
+
+.home-container-content-contact .home-container-content-contact-bottom .home-container-content-contact-bottom-left ul li:nth-child(3) a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    color: var(--color-green);
+}
+
+.home-container-content-contact .home-container-content-contact-bottom .home-container-content-contact-bottom-left ul li:nth-child(3) a :nth-child(1) {
+    color: var(--color-green);
+    font-size: 18px;
+}
+
+.home-container-content-contact .home-container-content-contact-bottom .home-container-content-contact-bottom-left ul li h4 {
+    color: var(--button-text);
+    font-size: larger;
+}
+
+.home-container-content-contact .home-container-content-contact-bottom .home-container-content-contact-bottom-left ul li p {
+    margin-top: -15px;
+    color: var(--light-gray);
+}
+
+.home-container-content-contact .home-container-content-contact-bottom .home-container-content-contact-bottom-left ul li a {
+    color: var(--color-green);
+    text-decoration: none;
+}
+
+
+.home-container-content-contact .home-container-content-contact-bottom .home-container-content-contact-bottom-right {
+    flex: 1;
+}
+
+.home-container-content-contact .home-container-content-contact-bottom .home-container-content-contact-bottom-right iframe {
+    height: 600px;
+    width: 800px;
+}
+
+@media only screen and (max-width: 1239px){
+    .home-container-content-contact .home-container-content-contact-bottom .home-container-content-contact-bottom-right iframe {
+        height: 600px;
+        width: 650px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .home-container-content-contact .home-container-content-contact-top h2 {
+        color: var(--button-secondary-text);
+        font-size: 34px;
+    }
+    .home-container-content-contact .home-container-content-contact-bottom .home-container-content-contact-bottom-left {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home-container-content-contact .home-container-content-contact-bottom .home-container-content-contact-bottom-left ul {
+        display: flex;
+        list-style: none;
+        flex-direction: column;
+        gap: 30px;
+        margin-left: -300px;
+    }
+
+    .home-container-content-contact .home-container-content-contact-bottom {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home-container-content-contact .home-container-content-contact-bottom .home-container-content-contact-bottom-right iframe {
+        height: 550px;
+        width: 700px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .home-container-content-contact .home-container-content-contact-top h2 {
+        color: var(--button-secondary-text);
+        font-size: 30px;
+    }
+    .home-container-content-contact .home-container-content-contact-bottom .home-container-content-contact-bottom-right iframe {
+        height: 500px;
+        width: 550px;
+    }
+
+    .home-container-content-contact .home-container-content-contact-bottom .home-container-content-contact-bottom-left ul {
+        display: flex;
+        list-style: none;
+        flex-direction: column;
+        gap: 30px;
+        margin-left: -200px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .home-container-content-contact .home-container-content-contact-bottom .home-container-content-contact-bottom-right iframe {
+        height: 400px;
+        width: 370px;
+    }
+
+    .home-container-content-contact .home-container-content-contact-bottom .home-container-content-contact-bottom-left ul {
+        display: flex;
+        list-style: none;
+        flex-direction: column;
+        gap: 30px;
+        margin-left: -50px;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .home-container-content-contact .home-container-content-contact-top h2 {
+        color: var(--button-secondary-text);
+        font-size: 27px;
+    }
+    .home-container-content-contact .home-container-content-contact-bottom .home-container-content-contact-bottom-right iframe {
+        height: 350px;
+        width: 300px;
+    }
+
+    .home-container-content-contact .home-container-content-contact-bottom .home-container-content-contact-bottom-left ul {
+        display: flex;
+        list-style: none;
+        flex-direction: column;
+        gap: 30px;
+        margin-left: -30px;
+    }
+}

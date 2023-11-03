@@ -1,0 +1,101 @@
+.home-container-content-user {
+    display: flex;
+    flex-direction: column;
+    padding: 25px 20px;
+}
+
+.home-container-content-user .home-container-content-user-left h2 {
+    font-size: 37px;
+    color: var(--button-text);
+    text-align: center;
+}
+
+.home-container-content-user .home-container-content-user-right ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 20px;
+    justify-content: center;
+}
+
+.home-container-content-user .home-container-content-user-right ul li {
+    width: 200px;
+    height: 250px;
+    border: 1px solid var(--dark-gray);
+    padding: 20px;
+}
+
+@media only screen and (max-width:1239px) {
+    .home-container-content-user .home-container-content-user-right ul li {
+        width: 250px;
+        height: 200px;
+        border: 1px solid var(--dark-gray);
+    }
+}
+
+@media only screen and (max-width:1000px) {
+    .home-container-content-user .home-container-content-user-right ul li {
+        width: 150px;
+        height: 200px;
+        border: 1px solid var(--dark-gray);
+    }
+    .home-container-content-user .home-container-content-user-left h2 {
+        font-size: 34px;
+        color: var(--button-text);
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .home-container-content-user {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 15px;
+    }
+
+    .home-container-content-user .home-container-content-user-right ul{
+        margin-left: -40px;
+    }
+
+    .home-container-content-user .home-container-content-user-left h2 {
+        font-size: 30px;
+        color: var(--button-text);
+        text-align: center;
+    }
+    
+    .home-container-content-user .home-container-content-user-right ul li {
+        width: 150px;
+        height: 200px;
+        border: 1px solid var(--dark-gray);
+    }
+    .home-container-content-user .home-container-content-user-left h2 {
+        font-size: 32px;
+        color: var(--button-text);
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:320px) {
+    .home-container-content-user {
+        display: flex;
+        flex-direction: column;
+        padding: 15px 10px;
+    }
+
+    .home-container-content-user .home-container-content-user-left h2 {
+        font-size: 27px;
+        color: var(--button-text);
+        text-align: center;
+    }
+    
+    .home-container-content-user .home-container-content-user-right ul li {
+        width: 100px;
+        height: 150px;
+        border: 1px solid var(--dark-gray);
+    }
+    .home-container-content-user .home-container-content-user-left h2 {
+        font-size: 32px;
+        color: var(--button-text);
+        text-align: center;
+    }
+}

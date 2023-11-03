@@ -1,0 +1,296 @@
+#add-social-account .social-account-container .child-form-item {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+}
+
+#add-social-account .social-account-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#add-social-account .social-account-container button {
+    border: none;
+    padding: 5px 7px;
+    border-radius: 5px;
+    color: green;
+    font-weight: bold;
+    background-color: inherit;
+    border: 1px solid green;
+}
+
+#add-social-account .social-account-container button:hover {
+    background-color: green;
+    transition: all 0.3s ease-in-out;
+    color: #fff;
+    cursor: pointer;
+}
+
+#add-social-account .social-account-container .child-form-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+#add-social-account .social-account-container .child-form-item :nth-child(1) {
+    width: 30%;
+}
+
+#add-social-account .social-account-container .child-form-item :nth-child(2) {
+    width: 70%;
+}
+
+.form-item p {
+    font-size: small;
+    color: blue;
+}
+
+@media only screen and (min-width: 1500px) and (max-width:1600px) {
+    .outer-container {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1660px) {
+    .outer-container {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1700px) {
+    .outer-container {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+
+@media (min-width: 2560px) {
+    .outer-container {
+        width: 70%;
+    }
+}
+
+#seller-sign-up {
+    padding: 0;
+    margin: 0;
+}
+
+#seller-sign-up .outer-container {
+    display: flex;
+    flex: 1;
+}
+
+#seller-sign-up .outer-container .container {
+    display: flex;
+    gap: 10px;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    background-color: #f1f1ff;
+    padding: 50px 20px;
+}
+
+#seller-sign-up .outer-container .container .intro{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#seller-sign-up .outer-container .container .intro h2{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#seller-sign-up .outer-container .container .intro h2>span{
+    font-size: 40px;
+}
+
+#seller-sign-up .outer-container .container form {
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    padding: 10px 20px 30px 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+#seller-sign-up .outer-container .container form p a{
+    text-decoration: none;
+    transition: color 0.5s ease-in-out;
+}
+
+#seller-sign-up .outer-container .container form p a:hover{
+    text-decoration: underline;
+    color: green;
+}
+
+#seller-sign-up .outer-container .container form label {
+    font-size: small;
+    font-weight: bold;
+}
+
+#seller-sign-up .outer-container .container form h2 {
+    text-align: center;
+    border-bottom: 1px solid #aaa;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+#seller-sign-up .outer-container .container form .success-message {
+    width: 50%;
+    height: 100vh;
+    background-color: black;
+    top: 0;
+    right: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#seller-sign-up .outer-container .container form .success-message p {
+    color: lime;
+    text-align: center;
+}
+
+#seller-sign-up .outer-container .container form .success-message p span {
+    color: white;
+    font-weight: bold;
+    font-size: 70px;
+}
+
+#seller-sign-up .outer-container .container form .form-group .form-items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#seller-sign-up .outer-container .container form .form-group .form-items .form-item {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+#seller-sign-up .outer-container .container form .form-group .form-items .line {
+    display: flex;
+    justify-content: space-between;
+}
+
+#seller-sign-up .outer-container .container form .form-group .form-items .line .form-item {
+    width: 47%;
+}
+
+#seller-sign-up .outer-container .container form .form-group .form-items .button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px 30px;
+}
+
+#seller-sign-up .outer-container .container form .form-group .form-items .button button {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: var(--bright-white);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+#seller-sign-up .outer-container .container form .form-group .form-items .form-item input[type="number"] {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+#seller-sign-up .outer-container .container form .form-group .form-items .form-item input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="password"],
+input[type="url"],
+input[type="number"],
+select {
+    height: 25px;
+    border: none;
+    border-bottom: 1px solid lime;
+    outline: none;
+    padding: 5px;
+    background-color: inherit;
+}
+
+#seller-sign-up .outer-container .container form .form-group .form-items .form-item 
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+input[type="password"]:focus,
+input[type="url"]:focus,
+input[type="number"]:focus,
+select:focus {
+    border-bottom: 1px solid blue;
+}
+
+select:focus {
+    outline: none;
+    border-bottom: 1px solid blue;
+    transition: all 0.3s ease-in-out;
+}
+
+#seller-sign-up .outer-container .container form .form-group .form-items .form-item textarea {
+    border: 1px solid lime;
+    border-radius: 7px;
+}
+
+#seller-sign-up .outer-container .container form .form-group .form-items .form-item textarea:focus {
+    border: 1px solid blue;
+}
+
+@media only screen and (max-width:768px) {
+    #seller-sign-up .outer-container .container form .form-group .form-items .line {
+        flex-direction: column;
+    }
+
+    #seller-sign-up .outer-container .container form .form-group .form-items .line .form-item {
+        width: 100%;
+    }
+
+    #seller-sign-up .outer-container .container form {
+        margin-top: 100px;
+        border: 1px solid #aaa;
+        border-radius: 10px;
+        padding: 7px 15px 20px 15px;
+        background-color: rgba(255, 255, 255, 0.5);
+        width: calc(100% - 50vw);
+        width: 350px;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    }
+}
+
+@media only screen and (max-width:320px) {
+    #seller-sign-up .outer-container .container form .form-group .form-items .line {
+        flex-direction: column;
+    }
+
+    #seller-sign-up .outer-container .container form .form-group .form-items .line .form-item {
+        width: 100%;
+    }
+
+    #seller-sign-up .outer-container .container form {
+        margin-top: 100px;
+        border: 1px solid #aaa;
+        border-radius: 10px;
+        padding: 7px 15px 20px 15px;
+        background-color: rgba(255, 255, 255, 0.5);
+        width: calc(100% - 50vw);
+        width: 250px;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    }
+}

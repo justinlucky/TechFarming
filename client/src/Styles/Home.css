@@ -1,0 +1,97 @@
+#home .home-container{
+    display: flex;
+    flex-direction: column;
+}
+
+#home .home-container .home-container-content:nth-child(1){
+    background-color: var(--background-color2);
+    padding: 30px 20px;
+}
+#home .home-container .home-container-content:nth-child(2){
+    background-color: var(--background-color11);
+    padding: 30px 20px;
+}
+#home .home-container .home-container-content:nth-child(3){
+    background-color: var(--background-color3);
+    padding: 30px 20px;
+}
+#home .home-container .home-container-content:nth-child(4){
+    background-color: var(--background-color11);
+    padding: 30px 20px;
+}
+#home .home-container .home-container-content:nth-child(5){
+    background-color: var(--background-color2);
+    padding: 30px 20px;
+}
+#home .home-container .home-container-content:nth-child(6){
+    background-color: var(--background-color3);
+    padding: 30px 20px;
+}
+#home .home-container .home-container-content:nth-child(7){
+    background-color: var(--background-color11);
+    padding: 30px 20px;
+}
+#home .home-container .home-container-content:nth-child(8){
+    background-color: var(--background-color2);
+    padding: 30px 20px;
+}
+#home .home-container .home-container-content:nth-child(9){
+    background-color: var(--background-color3);
+    padding: 30px 20px;
+}
+
+#home .home-container .home-container-content:nth-child(10){
+    background-color: var(--background-color11);
+    padding: 30px 20px;
+}
+#home .home-container .home-container-content:nth-child(11){
+    background-color: var(--background-color2);
+    padding: 30px 20px;
+}
+#home .home-container .home-container-content:nth-child(12){
+    background-color: var(--background-color3);
+    padding: 30px 20px;
+}
+#home .home-container .home-container-content:nth-child(13){
+    background-color: var(--background-color11);
+    padding: 30px 20px;
+}
+#home .home-container .home-container-content:nth-child(14){
+    background-color: var(--background-color2);
+    padding: 30px 20px;
+}
+#home .home-container .home-container-content:nth-child(15){
+    background-color: var(--background-color3);
+    padding: 30px 20px;
+}
+#home .home-container .home-container-content:nth-child(16){
+    background-color: var(--background-color11);
+    padding: 30px 20px;
+}
+@media only screen and (min-width: 1500px) and (max-width:1600px) {
+    .home-container{
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1660px) {
+    .home-container {
+        width: 85%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1700px) {
+    .home-container {
+        width: 75%;
+        margin: 0 auto;
+    }
+}
+
+
+@media (min-width: 2560px) {
+    .home-container {
+        width: 70%;
+    }
+}

@@ -1,0 +1,90 @@
+.home-container-content-job{
+    padding: 25px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-container-content-job .home-container-content-job-top{
+    display: flex;
+    flex-direction: column;
+}
+
+.home-container-content-job .home-container-content-job-top h2{
+    font-size: 37px;
+    color: var(--button-text);
+}
+
+.home-container-content-job .home-container-content-job-top p{
+    color: var(--light-gray);
+}
+
+.home-container-content-job .home-container-content-job-bottom{
+    display: flex;
+    flex-direction: column;
+}
+
+.home-container-content-job .home-container-content-job-bottom .department .home-container-content-job-bottom-up{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home-container-content-job .home-container-content-job-bottom .department .home-container-content-job-bottom-up h3{
+    color: var(--button-text);
+}
+
+.home-container-content-job .home-container-content-job-bottom .department .home-container-content-job-bottom-up button{
+    background-color: inherit;
+    border: none;
+    color: var(--button-text);
+    font-size: 20px;
+}
+
+.home-container-content-job .home-container-content-job-bottom .department ul li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home-container-content-job .home-container-content-job-bottom .department ul li .left h4{
+    color: var(--light-gray);
+}
+
+.home-container-content-job .home-container-content-job-bottom .department ul li .left p{
+    margin-top: -10px;
+}
+
+.home-container-content-job .home-container-content-job-bottom .department ul li .right a{
+    background-color: var(--button-tertiary-background);
+    color: var(--button-text);
+    text-decoration: none;
+    padding: 7px 15px;
+}
+
+.home-container-content-job .home-container-content-job-bottom .department ul .explore-more-job{
+    background-color: var(--color-gold1);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 15px;
+    margin-top: 20px;
+    color: var(--button-text);
+    width: 200px;
+    margin-left: 50%;
+    font-size: larger;
+    transform: translate(-50%, -50%);
+}
+
+.home-container-content-job .home-container-content-job-bottom .opportunities-page{
+    text-decoration: none;
+    padding: 7px 15px;
+    margin-top: 70px;
+    color: var(--button-text);
+    margin-left: 50%;
+    font-size: larger;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    border: 1px solid var(--color-gold1);
+    background-color: var(--background-color1);
+}

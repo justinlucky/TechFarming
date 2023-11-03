@@ -1,0 +1,26 @@
+#chatBot{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 70px;
+    margin-bottom: 50px;
+    box-shadow: 5px 10px 5px var(--darker-gray);
+}
+#chatBot .chat-bot{
+    background-color: var(--background-color4);
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    color: var(--background-color1);
+    font-size: 30px;
+    height: 60px;
+    width: 60px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    box-shadow: 5px 10px 5px var(--darker-gray);
+}

@@ -1,0 +1,111 @@
+/*This will be wonderful*/
+/* For max screen*/
+@media only screen and (max-width:320px) {
+    h1{
+        color: blue;
+    }
+}
+@media only screen and (max-width: 767px) {
+    h1{
+        color: blue;
+    }
+}
+@media only screen and (max-width:1000px) {
+    h1{
+        color: green;
+    }
+}
+@media only screen and (max-width:1024px) {
+    h1{
+        color: yellow;
+    }
+}
+@media only screen and (max-width:1239px) {
+    h1{
+        color: orange;
+    }
+}
+@media only screen and (max-width:1400px) {
+    h1{
+        color: purple;
+    }
+}
+@media only screen and (max-width: 1470px) {
+    h1{
+        color: green;
+    }
+}
+
+/*This will be wonderful*/
+/* For min screen*/
+
+@media only screen and (min-width: 1001px) {
+    h1{
+        color: blue;
+    }
+}
+@media only screen and (min-width: 1025px) {
+    h1{
+        color: blue;
+    }
+}
+@media only screen and (min-width: 1100px) {
+    h1{
+        color: blue;
+    }
+}
+@media only screen and (min-width: 1240px) {
+    h1{
+        color: blue;
+    }
+}
+@media only screen and (min-width: 1280px) {
+    h1{
+        color: blue;
+    }
+}
+@media only screen and (min-width: 1300px) {
+    h1{
+        color: blue;
+    }
+}
+@media only screen and (min-width: 1340px) {
+    h1{
+        color: blue;
+    }
+}
+@media only screen and (min-width: 1660px) {
+    h1{
+        color: blue;
+    }
+}
+
+@media only screen and (min-width: 1700px) {
+    h1{
+        color: blue;
+    }
+}
+@media only screen and (min-width: 2560px) {
+    h1{
+        color: blue;
+    }
+}
+
+/*This will be wonderful*/
+/* For min and max screen*/
+
+@media only screen and (min-width: 768px) and (max-width: 919px) {
+    h1{
+        color: red;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+    h1{
+        color: red;
+    }
+}
+@media only screen and (min-width: 1500px) and (max-width: 1660px) {
+    h1{
+        color: red;
+    }
+}

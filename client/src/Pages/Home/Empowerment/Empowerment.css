@@ -1,0 +1,289 @@
+.home-container-content-empowerment {
+    display: flex;
+    padding: 25px 20px;
+    gap: 20px;
+    align-items: center;
+}
+
+.home-container-content-empowerment .home-container-content-empowerment-left{
+    flex: 1;
+}
+
+.home-container-content-empowerment .home-container-content-empowerment-left h2{
+    font-size: 37px;
+    color: var(--button-text);
+}
+
+.home-container-content-empowerment .home-container-content-empowerment-left p{
+    color: var(--light-gray);
+}
+
+.home-container-content-empowerment .home-container-content-empowerment-left ul{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    list-style: none;
+    width: 100%;
+    margin-left: -40px;
+}
+
+.home-container-content-empowerment .home-container-content-empowerment-left ul li{
+    width: calc(100% / 2 - 20px);
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-container-content-empowerment .home-container-content-empowerment-left ul li p:nth-child(1){
+    color: var(--color-gold1);
+    font-size: 40px;
+}
+
+.home-container-content-empowerment .home-container-content-empowerment-left ul li p:nth-child(2){
+    color: var(--light-gray);
+    text-align: center;
+    margin-top: -20px;
+}
+
+.home-container-content-empowerment .home-container-content-empowerment-left .home-container-content-empowerment-left-buttons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 50px;
+}
+
+.home-container-content-empowerment .home-container-content-empowerment-left .home-container-content-empowerment-left-buttons a{
+    text-decoration: none;
+    padding: 7px 15px;
+}
+
+.home-container-content-empowerment .home-container-content-empowerment-left .home-container-content-empowerment-left-buttons a:nth-child(1){
+    border: 1px solid var(--color-green);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--button-text);
+    background-color: var(--background-color1);
+}
+
+.home-container-content-empowerment .home-container-content-empowerment-left .home-container-content-empowerment-left-buttons a:nth-child(2){
+    background-color: var(--button-tertiary-background);
+    color: var(--button-text);
+}
+
+.home-container-content-empowerment .home-container-content-empowerment-right{
+    flex: 1;
+}
+
+.home-container-content-empowerment .home-container-content-empowerment-right .image-slider{
+    background-color: var(--color-aqua);
+    padding: 5px;
+    position: relative;
+}
+
+.home-container-content-empowerment .home-container-content-empowerment-right .image-slider img{
+    height: 600px;
+    width: 100%;
+}
+
+
+.home-container-content-empowerment .home-container-content-empowerment-right .image-slider .button-container button:nth-child(1){
+    position: absolute;
+    top: 45%;
+    left: 0;
+    font-size: 23px;
+    padding: 10px;
+    color: var(--button-text);
+    background-color: var(--background-color11);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: none;
+}
+
+.home-container-content-empowerment .home-container-content-empowerment-right .image-slider .button-container button:nth-child(2){
+    position: absolute;
+    top: 45%;
+    right: 0;
+    font-size: 23px;
+    padding: 10px;
+    color: var(--button-text);
+    background-color: var(--background-color11);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: none;
+}
+
+
+@media only screen and (max-width:1239px) {
+    .home-container-content-empowerment {
+        display: flex;
+        padding: 25px 20px;
+        flex-direction: column;
+    }
+    .home-container-content-empowerment .home-container-content-empowerment-right .image-slider img{
+        height: 500px;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:1000px) {
+    .home-container-content-empowerment {
+        display: flex;
+        padding: 23px 18px;
+        flex-direction: column;
+    }
+    .home-container-content-empowerment .home-container-content-empowerment-right .image-slider img{
+        height: 450px;
+        width: 100%;
+    }
+    .home-container-content-empowerment .home-container-content-empowerment-right .image-slider .button-container button:nth-child(1){
+        position: absolute;
+        top: 45%;
+        left: 0;
+        font-size: 20px;
+        padding: 7px;
+        color: var(--button-text);
+        background-color: var(--background-color11);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        border: none;
+    }
+    
+    .home-container-content-empowerment .home-container-content-empowerment-right .image-slider .button-container button:nth-child(2){
+        position: absolute;
+        top: 45%;
+        right: 0;
+        font-size: 20px;
+        padding: 7px;
+        color: var(--button-text);
+        background-color: var(--background-color11);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        border: none;
+    }
+
+    .home-container-content-empowerment .home-container-content-empowerment-left ul{
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        list-style: none;
+        width: 100%;
+        margin-left: -30px;
+    }
+    
+    .home-container-content-empowerment .home-container-content-empowerment-left ul li{
+        width: calc(100% / 2 - 15px);
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .home-container-content-empowerment .home-container-content-empowerment-left ul li p:nth-child(1){
+        color: var(--color-gold1);
+        font-size: 40px;
+    }
+    
+}
+
+@media only screen and (max-width:768px) {
+    .home-container-content-empowerment {
+        display: flex;
+        padding: 20px 15px;
+        flex-direction: column;
+    }
+    .home-container-content-empowerment .home-container-content-empowerment-right .image-slider img{
+        height: 400px;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .home-container-content-empowerment {
+        display: flex;
+        padding: 15px 10px;
+        flex-direction: column;
+    }
+    .home-container-content-empowerment .home-container-content-empowerment-right .image-slider img{
+        height: 350px;
+        width: 100%;
+    }
+
+    .home-container-content-empowerment .home-container-content-empowerment-left ul{
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        list-style: none;
+        width: 100%;
+        margin-left: -40px;
+        flex-direction: column;
+    }
+    
+    .home-container-content-empowerment .home-container-content-empowerment-left ul li{
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .home-container-content-empowerment .home-container-content-empowerment-left ul li p:nth-child(1){
+        color: var(--color-gold1);
+        font-size: 35px;
+    }
+
+    .home-container-content-empowerment .home-container-content-empowerment-left ul li p:nth-child(2){
+        color: var(--light-gray);
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:320px) {
+    .home-container-content-empowerment {
+        display: flex;
+        padding: 15px 10px;
+        flex-direction: column;
+    }
+    .home-container-content-empowerment .home-container-content-empowerment-right .image-slider img{
+        height: 300px;
+        width: 100%;
+    }
+    .home-container-content-empowerment .home-container-content-empowerment-left ul{
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        list-style: none;
+        width: 100%;
+        margin-left: -40px;
+        flex-direction: column;
+    }
+    
+    .home-container-content-empowerment .home-container-content-empowerment-left ul li{
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .home-container-content-empowerment .home-container-content-empowerment-left ul li p:nth-child(1){
+        color: var(--color-gold1);
+        font-size: 35px;
+    }
+
+    .home-container-content-empowerment .home-container-content-empowerment-left ul li p:nth-child(2){
+        color: var(--light-gray);
+        text-align: center;
+    }
+    
+}

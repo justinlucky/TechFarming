@@ -1,0 +1,8 @@
+#language-selector select{
+    background-color: aliceblue;
+    height: 27px;
+}
+#language-selector select option{
+    background-color: var(--background-color6);
+    color: var(--background-color1);
+}

@@ -1,0 +1,203 @@
+.home-container-content-faq{
+    display: flex;
+    padding: 25px 20px;
+}
+
+.home-container-content-faq .home-container-content-faq-left{
+    flex: 1;
+}
+
+.home-container-content-faq .home-container-content-faq-left h2{
+    font-size: 37px;
+    color: var(--button-text);
+}
+
+.home-container-content-faq .home-container-content-faq-left p{
+    color: var(--light-gray);
+}
+
+.home-container-content-faq .home-container-content-faq-left .links{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.home-container-content-faq .home-container-content-faq-left .links a{
+    color: var(--color-gold1);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.home-container-content-faq .home-container-content-faq-right{
+    flex: 1;
+}
+
+.home-container-content-faq .home-container-content-faq-right ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+}
+
+.home-container-content-faq .home-container-content-faq-right ul li{
+    border: 1px solid var(--color-green);
+    padding: 20px 15px;
+}
+
+.home-container-content-faq .home-container-content-faq-right ul li .top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.home-container-content-faq .home-container-content-faq-right ul li .top p{
+    color: var(--light-gray);
+}
+
+.home-container-content-faq .home-container-content-faq-right ul li .top button{
+    border: none;
+    background-color: inherit;
+    color: var(--button-text);
+    font-size: 24px;
+}
+
+.home-container-content-faq .home-container-content-faq-right ul li p{
+    color: var(--button-text);
+    font-size: larger;
+}
+
+@media only screen and (max-width: 1239px) {
+    .home-container-content-faq{
+        display: flex;
+        padding: 25px 20px;
+        flex-direction: column;
+    }
+    
+    .home-container-content-faq .home-container-content-faq-left{
+        display: flex;
+        flex-direction: column;
+        padding: 20px 25px;
+    }
+    
+    .home-container-content-faq .home-container-content-faq-left h2{
+        font-size: 37px;
+        color: var(--button-text);
+    }
+    
+    .home-container-content-faq .home-container-content-faq-left p{
+        color: var(--light-gray);
+    }
+    
+    .home-container-content-faq .home-container-content-faq-left .links{
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .home-container-content-faq .home-container-content-faq-right{
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0px;
+    }
+    
+    .home-container-content-faq .home-container-content-faq-left .links a{
+        color: var(--color-gold1);
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .home-container-content-faq{
+        display: flex;
+        padding: 15px 10px;
+        flex-direction: column;
+    }
+    
+    .home-container-content-faq .home-container-content-faq-left{
+        display: flex;
+        flex-direction: column;
+        padding: 10px 15px;
+    }
+    
+    .home-container-content-faq .home-container-content-faq-left h2{
+        font-size: 34px;
+        color: var(--button-text);
+    }
+    
+    .home-container-content-faq .home-container-content-faq-left p{
+        color: var(--light-gray);
+    }
+    
+    .home-container-content-faq .home-container-content-faq-left .links{
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    
+    .home-container-content-faq .home-container-content-faq-left .links a{
+        color: var(--color-gold1);
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    .home-container-content-faq .home-container-content-faq-right ul li{
+        border: 1px solid var(--color-green);
+        padding: 10px 5px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .home-container-content-faq{
+        display: flex;
+        padding: 10px 5px;
+        flex-direction: column;
+    }
+    
+    .home-container-content-faq .home-container-content-faq-left{
+        display: flex;
+        flex-direction: column;
+        padding: 5px 10px;
+    }
+    
+    .home-container-content-faq .home-container-content-faq-left h2{
+        font-size: 34px;
+        color: var(--button-text);
+    }
+    
+    .home-container-content-faq .home-container-content-faq-left p{
+        color: var(--light-gray);
+    }
+    
+    .home-container-content-faq .home-container-content-faq-left .links{
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    
+    .home-container-content-faq .home-container-content-faq-left .links a{
+        color: var(--color-gold1);
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    .home-container-content-faq .home-container-content-faq-right ul{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        list-style: none;
+        margin-left: -45px;
+    }
+    .home-container-content-faq .home-container-content-faq-right ul li{
+        border: 1px solid var(--color-green);
+        padding: 10px 5px;
+        width: 270px;
+    }
+}

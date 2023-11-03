@@ -1,0 +1,920 @@
+/*================*/
+/*================*/
+/*================*/
+/*User Sign Up Page*/
+/*User sign up styling only*/
+/*================*/
+/*================*/
+/*================*/
+@media only screen and (min-width: 1500px) and (max-width:1600px) {
+    .outer-container {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+@media (min-width: 1660px) {
+    .outer-container {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1700px) {
+    .outer-container  {
+      width: 70%; 
+      margin: 0 auto; 
+    }
+  }
+  
+  
+  @media (min-width: 2560px) {
+    .outer-container  {
+      width: 70%; 
+    }
+  }
+#user-sign-up {
+    margin: 0;
+    padding: 0;
+}
+
+#user-sign-up .outer-container {
+    display: flex;
+    flex: 1;
+}
+
+#user-sign-up .outer-container .member-sign-up{
+    flex: 1;
+    padding: 30px 10px 20px 10px;
+    background-image: linear-gradient(60deg, navy,purple,darkblue,rgb(140, 5, 140));
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#user-sign-up .outer-container .member-sign-up .button{
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#user-sign-up .outer-container .member-sign-up .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#user-sign-up .outer-container .member-sign-up .logo img{
+    height: 200px;
+}
+
+
+#user-sign-up .outer-container .member-sign-up p{
+    color: var(--light-gray);
+}
+
+#user-sign-up .outer-container .member-sign-up .text-box h3{
+    color: var(--light-gray);
+}
+
+#user-sign-up .outer-container .member-sign-up .text-box .typewriter-effect h1{
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+}
+
+#user-sign-up .outer-container .member-sign-up .text-box .advantages-of-membership ul li{
+    color: var(--light-gray);
+    font-size: smaller;
+}
+
+#user-sign-up .outer-container .member-sign-up .text-box .advantages-of-membership ul li span {
+    font-size: larger;
+    color: #eee;
+}
+
+#user-sign-up .outer-container .container {
+    display: flex;
+    gap: 10px;
+    height: 100vh;
+    flex-direction: column;
+    padding: 30px 10px 20px 10px;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    background-color:var(--background-color6);
+}
+
+#user-sign-up .outer-container .container form {
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    padding: 10px 20px 30px 20px;
+    background-color: rgba(255,255,255,0.5);
+    box-shadow: 0 10px 10px rgba(255,255,255,0.1);
+}
+
+#user-sign-up .outer-container .container form label{
+    font-size: small;
+    font-weight: bold;
+}
+
+#user-sign-up .outer-container .container form .success-message{
+    width: 50%;
+    height: 100vh;
+    background-color: black;
+    top: 0;
+    right: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#user-sign-up .outer-container .container form .success-message p{
+    color: lime;
+    text-align: center;
+}
+
+#user-sign-up .outer-container .container form .success-message p span{
+    color: white;
+    font-weight: bold;
+    font-size: 70px;
+}
+
+#user-sign-up .outer-container .container form h2 {
+    text-align: center;
+    border-bottom: 1px  solid #aaa;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+#user-sign-up .outer-container .container form .form-group .form-items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#user-sign-up .outer-container .container form .form-group .form-items .form-item {
+    display: flex;
+    flex-direction: column;
+}
+
+#user-sign-up .outer-container .container form .form-group .form-items .line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#user-sign-up .outer-container .container form .form-group .form-items .line .form-item {
+    width: 47%;
+}
+
+#user-sign-up .outer-container .container form .form-group .form-items .line .form-item .password-input{
+    display: flex;
+    position: relative;
+}
+
+#user-sign-up .outer-container .container form .form-group .form-items .line .form-item .password-input .button-password{
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    right: 0;
+    margin-right: -10px;
+    position: absolute;
+}
+
+#user-sign-up .outer-container .container form .form-group .form-items .navigate p {
+    font-size: 10px;
+    text-align: center;
+}
+
+#user-sign-up .outer-container .container form .form-group .form-items .navigate p a {
+    text-decoration: none;
+}
+
+#user-sign-up .outer-container .container form .form-group .form-items .button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#user-sign-up .outer-container .container form .form-group .form-items .button button{
+    border: none;
+    padding: 7px 15px;
+    border-radius: 5px;
+    color: var(--bright-white);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#user-sign-up .outer-container .container form .form-group .form-items .button button:hover{
+    background-color: inherit;
+    color: var(--dark-black);
+    border: var(--dark-green);
+}
+
+#user-sign-up .outer-container .container form .form-group .form-items 
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="password"],
+select {
+    height: 25px;
+}
+
+#user-sign-up .outer-container .container form .form-group .form-items select{
+    border: none;
+    background-color: inherit;
+    border-bottom: 1px solid green;
+}
+
+#user-sign-up .outer-container .container form .form-group .form-items select:focus{
+    outline: none;
+    border-bottom: 1px solid blue;
+}
+
+#user-sign-up .outer-container .container form .form-group .form-items select,input[type="date"]{
+    cursor: pointer;
+}
+
+#user-sign-up .outer-container .container form .form-group .form-items 
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"]{
+    border: none;
+    background-color: inherit;
+    border-bottom: 1px solid green;
+}
+
+#user-sign-up .outer-container .container form .form-group .form-items 
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus{
+    outline: none;
+    border-bottom: 1px solid blue;
+}
+
+#user-sign-up .outer-container .container .social-sign-up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#user-sign-up .outer-container .container .social-sign-up hr{
+    width: 200px;
+    margin-top: -10px;
+}
+
+#user-sign-up .outer-container .container .social-sign-up p{
+    text-align: center;
+    font-size: larger;
+    margin-top: -5px;
+    color: var(--text-dark);
+}
+
+#user-sign-up .outer-container .container .social-sign-ask {
+    display: flex;
+    flex-direction: column;
+}
+
+#user-sign-up .outer-container .container .social-sign-ask .social-icons {
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: -35px;
+}
+
+#user-sign-up .outer-container .container .social-sign-ask .social-icons li{
+    padding: 4px 8px;
+    border-radius: 18px;
+}
+
+#user-sign-up .outer-container .container .social-sign-ask .social-icons li:nth-child(1){
+    background-image: linear-gradient(90deg, blue, violet,purple);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    transition: background-position 0.7s ease-in-out, box-shadow 0.7s ease-in-out;
+}
+
+#user-sign-up .outer-container .container .social-sign-ask .social-icons li:nth-child(1):hover{
+    background-position: 0 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-image: linear-gradient(-90deg, blue, violet,purple);
+}
+
+#user-sign-up .outer-container .container .social-sign-ask .social-icons li:nth-child(2){
+    background-image: linear-gradient(90deg, green, turquoise, lime);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    transition: background-position 0.7s ease-in-out, box-shadow 0.7s ease-in-out;
+}
+
+#user-sign-up .outer-container .container .social-sign-ask .social-icons li:nth-child(2):hover{
+    background-position: 0 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-image: linear-gradient(-90deg, green, turquoise, lime);
+}
+
+#user-sign-up .outer-container .container .social-sign-ask .social-icons li:nth-child(3){
+    background-image: linear-gradient(90deg,coral,orange,orangered);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    transition: background-position 0.7s ease-in-out, box-shadow 0.7s ease-in-out;
+}
+
+#user-sign-up .outer-container .container .social-sign-ask .social-icons li:nth-child(3):hover{
+    background-position: 0 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-image: linear-gradient(-90deg,coral,orange,orangered);
+}
+
+#user-sign-up .outer-container .container .social-sign-ask .social-icons a{
+    display: flex;
+    gap: 7px;
+    text-decoration: none;  
+    align-items: center;
+}
+#user-sign-up .outer-container .container .social-sign-ask .social-icons a .social-icons-line{
+    border-radius: 50%;
+    background-color: white;
+    height: 23px;
+    width: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+}
+
+#user-sign-up .outer-container .container .social-sign-ask .social-icons a .social-icons-line .icon{
+    font-size: 17px;
+}
+
+#user-sign-up .outer-container .container .social-sign-ask .social-icons a .social-icons-line .google{
+    color: #4285f4;
+}
+
+#user-sign-up .outer-container .container .social-sign-ask .social-icons a .social-icons-line .twitter{
+    color: #1da1f2;
+}
+
+#user-sign-up .outer-container .container .social-sign-ask .social-icons a .social-icons-line .facebook{
+    color: #3b5998;
+}
+
+#user-sign-up .outer-container .container .social-sign-ask .social-icons a span{
+    font-size: small;
+    font-weight: 500;
+    color: var(--bright-white);
+}
+
+
+@media only screen and (max-width:320px) {
+    #user-sign-up .outer-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #user-sign-up .outer-container .member-sign-up{
+        padding: 10px 20px;
+        background-image: linear-gradient(60deg, navy,purple,darkblue,rgb(140, 5, 140));
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    }
+
+    #user-sign-up .outer-container .container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        height: 100%;
+        width: 100vw;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #user-sign-up .outer-container .container form {
+        border: 1px solid #aaa;
+        border-radius: 10px;
+        padding: 7px 15px 20px 15px;
+        background-color: rgba(255,255,255,0.5);
+        width: 200px;
+        box-shadow: 0 0 10px rgba(255,255,255,0.3);
+    }
+
+    #user-sign-up .outer-container .container form .success-message{
+        background-color: black;
+        width: 100%;
+        height: 50%;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #user-sign-up .outer-container .container form .success-message p{
+        color: lime;
+        text-align: center;
+    }
+    
+    #user-sign-up .outer-container .container form .success-message p span{
+        color: white;
+        font-weight: bold;
+        font-size: 30px;
+    }
+
+    #user-sign-up .outer-container .container form h2 {
+        text-align: center;
+        border-bottom: 1px  solid #aaa;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+    
+    #user-sign-up .outer-container .container form .form-group .form-items .line {
+        display: flex;
+        flex-direction:column;
+    }
+
+    #user-sign-up .outer-container .container form .form-group .form-items .line .form-item {
+        width: 100%;
+    }
+
+    #user-sign-up .outer-container .container form .form-group .form-items .line .form-item .password-input{
+        display: flex;
+    }
+
+    #user-sign-up .outer-container .container form .form-group .form-items .line .form-item .password-input input{
+        width: 100%;
+    }
+
+    #user-sign-up .outer-container .container form .form-group .form-items .button button{
+        border: none;
+        padding: 5px 12px;
+        border-radius: 5px;
+        color: var(--bright-white);
+        cursor: pointer;
+        font-weight: 400;
+    }
+
+    #user-sign-up .outer-container .container .social-sign-ask .social-icons {
+        display: flex;
+        gap: 10px;
+        list-style-type: none;
+        flex-direction: column;
+        margin-left: -30px;
+        margin-top: -2px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    #user-sign-up .outer-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #user-sign-up .outer-container .member-sign-up{
+        padding: 20px 10px;
+        background-image: linear-gradient(60deg, navy,purple,darkblue,rgb(140, 5, 140));
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+        width: 100%;
+    }
+
+    #user-sign-up .outer-container .container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100vw;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #user-sign-up .outer-container .container form {
+        margin-top: 100px;
+        border: 1px solid #aaa;
+        border-radius: 10px;
+        padding: 20px 10px 20px 10px;
+        background-color: rgba(255,255,255,0.5);
+        width: calc(100% - 50vw);
+        width: 250px;
+        box-shadow: 0 0 10px rgba(255,255,255,0.3);
+    }
+
+    #user-sign-up .outer-container .container form .success-message{
+        background-color: black;
+        width: 100%;
+        height: 100%;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #user-sign-up .outer-container .container form .success-message p{
+        color: lime;
+        text-align: center;
+    }
+    
+    #user-sign-up .outer-container .container form .success-message p span{
+        color: white;
+        font-weight: bold;
+        font-size: 40px;
+    }
+
+    #user-sign-up .outer-container .container form h2 {
+        text-align: center;
+        border-bottom: 1px  solid #aaa;
+        border-bottom-right-radius: 23px;
+        border-bottom-left-radius: 23px;
+    }
+    
+    #user-sign-up .outer-container .container form .form-group .form-items .line {
+        display: flex;
+        flex-direction:column;
+    }
+
+    #user-sign-up .outer-container .container form .form-group .form-items .line .form-item {
+        width: 100%;
+    }
+
+    #user-sign-up .outer-container .container form .form-group .form-items .line .form-item .password-input{
+        display: flex;
+    }
+
+    #user-sign-up .outer-container .container form .form-group .form-items .line .form-item .password-input input{
+        width: 100%;
+    }
+
+    #user-sign-up .outer-container .container form .form-group .form-items .button button{
+        border: none;
+        padding: 5px 12px;
+        border-radius: 5px;
+        color: var(--bright-white);
+        cursor: pointer;
+        font-weight: 400;
+    }
+    #user-sign-up .outer-container .container .social-sign-ask .social-icons {
+        display: flex;
+        gap: 10px;
+        list-style-type: none;
+        margin-top: -2px;
+        flex-direction: column;
+        margin-left: -30px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 919px) {
+    #user-sign-up {
+        margin: 0;
+        padding: 0;
+    }
+    
+    #user-sign-up .outer-container {
+        display: flex;
+        flex: 1;
+    }
+    
+    #user-sign-up .outer-container .member-sign-up{
+        flex: 1;
+        padding: 30px 10px;
+        background-image: linear-gradient(60deg, navy,purple,darkblue,rgb(140, 5, 140));
+    }
+    
+    #user-sign-up .outer-container .member-sign-up .button{
+        width: 100%; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #user-sign-up .outer-container .member-sign-up .logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #user-sign-up .outer-container .member-sign-up .logo img{
+        height: 200px;
+    }
+    
+    
+    #user-sign-up .outer-container .member-sign-up p{
+        color: var(--light-gray);
+    }
+    
+    #user-sign-up .outer-container .member-sign-up .text-box .typewriter-effect h3{
+        text-align: center;
+        color: #fff;
+    }
+    
+    #user-sign-up .outer-container .member-sign-up .text-box .advantages-of-membership ul li{
+        color: var(--light-gray);
+        font-size: smaller;
+    }
+    
+    #user-sign-up .outer-container .member-sign-up .text-box .advantages-of-membership ul li span {
+        font-size: larger;
+        color: #eee;
+    }
+    
+    #user-sign-up .outer-container .container {
+        display: flex;
+        gap: 10px;
+        height: 100vh;
+        padding: 30px 10px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+    }
+    
+    #user-sign-up .outer-container .container form {
+        border: 1px solid #aaa;
+        border-radius: 10px;
+        padding: 10px 20px 30px 20px;
+        width: 300px;
+        background-color: rgba(255,255,255,0.5);
+        box-shadow: 0 0 10px rgba(255,255,255,0.1);
+    }
+    
+    #user-sign-up .outer-container .container form .success-message{
+        width: 100vw;
+        height: 100%;
+        background-color: black;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #user-sign-up .outer-container .container form .success-message p{
+        color: lime;
+        text-align: center;
+    }
+    
+    #user-sign-up .outer-container .container form .success-message p span{
+        color: white;
+        font-weight: bold;
+        font-size: 70px;
+    }
+    
+    #user-sign-up .outer-container .container form h2 {
+        text-align: center;
+        border-bottom: 1px  solid #aaa;
+        border-bottom-right-radius: 25px;
+        border-bottom-left-radius: 25px;
+    }
+    
+    #user-sign-up .outer-container .container form .form-group .form-items {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    #user-sign-up .outer-container .container form .form-group .form-items .form-item {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #user-sign-up .outer-container .container form .form-group .form-items .line {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    #user-sign-up .outer-container .container form .form-group .form-items .line .form-item {
+        width: 47%;
+    }
+    
+    #user-sign-up .outer-container .container form .form-group .form-items .line .form-item .password-input{
+        display: flex;
+        position: relative;
+    }
+    
+    #user-sign-up .outer-container .container form .form-group .form-items .line .form-item .password-input .button-password{
+        background-color: inherit;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        right: 0;
+        margin-right: -10px;
+        position: absolute;
+    }
+    
+    #user-sign-up .outer-container .container form .form-group .form-items .navigate p {
+        font-size: 10px;
+        text-align: center;
+    }
+    
+    #user-sign-up .outer-container .container form .form-group .form-items .navigate p a {
+        text-decoration: none;
+    }
+    
+    #user-sign-up .outer-container .container form .form-group .form-items .button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    #user-sign-up .container form .form-group .form-items .button button{
+        border: none;
+        padding: 7px 15px;
+        border-radius: 5px;
+        color: var(--bright-white);
+        cursor: pointer;
+        font-weight: bold;
+    }
+    
+    #user-sign-up .outer-container .container form .form-group .form-items .button button:hover{
+        background-color: inherit;
+        color: var(--dark-black);
+        border: var(--dark-green);
+    }
+    
+    #user-sign-up .outer-container .container form .form-group .form-items 
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    input[type="password"],
+    select {
+        height: 25px;
+    }
+    
+    #user-sign-up .outer-container .container form .form-group .form-items select{
+        border: none;
+        background-color: inherit;
+        border-bottom: 1px solid green;
+    }
+    
+    #user-sign-up .outer-container .container form .form-group .form-items select:focus{
+        outline: none;
+        border-bottom: 1px solid blue;
+    }
+    
+    #user-sign-up .outer-container .container form .form-group .form-items select,input[type="date"]{
+        cursor: pointer;
+    }
+    
+    #user-sign-up .outer-container .container form .form-group .form-items 
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="date"]{
+        border: none;
+        background-color: inherit;
+        border-bottom: 1px solid green;
+    }
+    
+    #user-sign-up .outer-container .container form .form-group .form-items 
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="password"]:focus,
+    input[type="date"]:focus{
+        outline: none;
+        border-bottom: 1px solid blue;
+    }
+    
+    #user-sign-up .outer-container .container .social-sign-up {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #user-sign-up .outer-container .container .social-sign-up hr{
+        width: 200px;
+        margin-top: -10px;
+    }
+    
+    #user-sign-up .outer-container .container .social-sign-up p{
+        text-align: center;
+        font-size: larger;
+        margin-top: -5px;
+    }
+    
+    #user-sign-up .outer-container .container .social-sign-ask {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #user-sign-up .outer-container .container .social-sign-ask .social-icons {
+        display: flex;
+        gap: 10px;
+        list-style-type: none;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: -35px;
+    }
+    
+    #user-sign-up .outer-container .container .social-sign-ask .social-icons li{
+        padding: 4px 8px;
+        border-radius: 18px;
+    }
+    
+    #user-sign-up .outer-container .container .social-sign-ask .social-icons li:nth-child(1){
+        background-image: linear-gradient(90deg, blue, violet,purple);
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+        background-size: 200% 100%;
+        background-position: 100% 0;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        transition: background-position 0.7s ease-in-out, box-shadow 0.7s ease-in-out;
+    }
+    
+    #user-sign-up .outer-container .container .social-sign-ask .social-icons li:nth-child(1):hover{
+        background-position: 0 0;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        background-image: linear-gradient(-90deg, blue, violet,purple);
+    }
+    
+    #user-sign-up .outer-container .container .social-sign-ask .social-icons li:nth-child(2){
+        background-image: linear-gradient(90deg, green, turquoise, lime);
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+        background-size: 200% 100%;
+        background-position: 100% 0;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        transition: background-position 0.7s ease-in-out, box-shadow 0.7s ease-in-out;
+    }
+    
+    #user-sign-up .outer-container .container .social-sign-ask .social-icons li:nth-child(2):hover{
+        background-position: 0 0;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        background-image: linear-gradient(-90deg, green, turquoise, lime);
+    }
+    
+    #user-sign-up .outer-container .container .social-sign-ask .social-icons li:nth-child(3){
+        background-image: linear-gradient(90deg,coral,orange,orangered);
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+        background-size: 200% 100%;
+        background-position: 100% 0;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        transition: background-position 0.7s ease-in-out, box-shadow 0.7s ease-in-out;
+    }
+    
+    #user-sign-up .outer-container .container .social-sign-ask .social-icons li:nth-child(3):hover{
+        background-position: 0 0;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        background-image: linear-gradient(-90deg,coral,orange,orangered);
+    }
+    
+    #user-sign-up .outer-container .container .social-sign-ask .social-icons a{
+        display: flex;
+        gap: 7px;
+        text-decoration: none;  
+        align-items: center;
+    }
+    #user-sign-up .outer-container .container .social-sign-ask .social-icons a .social-icons-line{
+        border-radius: 50%;
+        background-color: white;
+        height: 23px;
+        width: 23px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3px;
+    }
+    
+    #user-sign-up .outer-container .container .social-sign-ask .social-icons a .social-icons-line .icon{
+        font-size: 17px;
+    }
+    
+    #user-sign-up .outer-container .container .social-sign-ask .social-icons a .social-icons-line .google{
+        color: #4285f4;
+    }
+    
+    #user-sign-up .outer-container .container .social-sign-ask .social-icons a .social-icons-line .twitter{
+        color: #1da1f2;
+    }
+    
+    #user-sign-up .outer-container .container .social-sign-ask .social-icons a .social-icons-line .facebook{
+        color: #3b5998;
+    }
+    
+    #user-sign-up .outer-container .container .social-sign-ask .social-icons a span{
+        font-size: small;
+        font-weight: 500;
+        color: var(--bright-white);
+    }   
+    
+}

@@ -1,0 +1,16 @@
+{
+  "short_name": "TechFarming",
+  "name": "TechFarming - Robotics in Agriculture for a more Organics Cultivation",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#fafafa",
+  "background_color": "#222222",
+  "description": "TechFarming combines the power of robotics and cutting-edge technology with traditional agriculture to usher in a new era of organic cultivation. By leveraging robotics, automation, and smart data analytics, TechFarming revolutionizes the way we grow crops. It optimizes resource usage, minimizes environmental impact, and enhances crop quality and yield. This innovative approach not only ensures sustainable and organic farming practices but also addresses the growing global demand for healthier, eco-friendly food production. TechFarming is at the forefront of reshaping agriculture for a more efficient, sustainable, and organic future."
+}
