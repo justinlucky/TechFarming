@@ -1,4 +1,93 @@
 .about-main-content-nav {
     display: flex;
     padding: 25px 20px;
+    flex-direction: column;
 }
+
+.about-main-content-nav .about-main-content-nav-top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 20%;
+}
+
+.about-main-content-nav .about-main-content-nav-top h2{
+    font-size: 37px;
+    color: var(--button-text);
+    margin-top: -10px;
+}
+
+.about-main-content-nav .about-main-content-nav-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-main-content-nav .about-main-content-nav-bottom .about-main-content-nav-list{
+    flex: 0 0 20%;
+}
+
+.about-main-content-nav .about-main-content-nav-bottom .about-main-content-nav-list ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 30px;
+    margin-left: -40px;
+}
+
+.about-main-content-nav .about-main-content-nav-bottom .about-main-content-nav-list ul li button{
+    border: none;
+    background-color: inherit;
+    color: var(--button-text);
+    font-size: large;
+    padding: 5px;
+    transition: all 0.3s ease-in-out; 
+}
+
+.about-main-content-nav .about-main-content-nav-bottom .about-main-content-nav-list ul li button:hover{
+    color: var(--color-gold1);
+}
+
+.about-main-content-nav .about-main-content-nav-bottom .about-main-content-nav-list ul li button.active{
+    border-bottom: 1px solid var(--color-gold1);
+    color: var(--color-gold1);
+}
+
+.about-main-content-nav .about-main-content-nav-bottom .about-main-content-nav-main-content{
+    flex: 0 0 70%;
+}
+
+.about-main-content-nav .about-main-content-nav-bottom .about-main-content-nav-main-content.about-main-content-nav-main-content-aside .about-main-content-nav-main-content-aside-topic{
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (max-width:1239px) {
+    .about-main-content-nav {
+        display: flex;
+        padding: 25px 20px;
+        flex-direction: column;
+    }
+
+    .about-main-content-nav .about-main-content-nav-bottom{
+        display: flex;
+        flex-direction: column;
+    }
+    .about-main-content-nav .about-main-content-nav-bottom .about-main-content-nav-list ul{
+        display: flex;
+        gap: 20px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .about-main-content-nav .about-main-content-nav-bottom .about-main-content-nav-list ul li{
+        display: flex;
+        flex-direction: row;
+    }
+    .about-main-content-nav .about-main-content-nav-bottom .about-main-content-nav-main-content{
+        flex: 0 0 70%;
+        margin-top: 30px;
+    }
+}
+

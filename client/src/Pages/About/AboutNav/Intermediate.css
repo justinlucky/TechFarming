@@ -1,0 +1,57 @@
+.about-main-content-nav-main-content-aside-topic{
+    display: flex;
+    flex-direction: column;
+}
+
+.about-main-content-nav-main-content-aside-topic .about-main-content-nav-main-content-aside-topic-top{
+    background-image: var( --linear-gradient2);
+    height: 400px;
+    width: 100%;
+}
+
+.about-main-content-nav-main-content-aside-topic .about-main-content-nav-main-content-aside-topic-center{
+    display: flex;
+    margin-top: 30px;
+}
+
+.about-main-content-nav-main-content-aside-topic .about-main-content-nav-main-content-aside-topic-center .about-main-content-nav-main-content-aside-topic-center-left{
+    flex: 0 0 75%;
+    padding: 20px 0px;
+}
+
+.about-main-content-nav-main-content-aside-topic .about-main-content-nav-main-content-aside-topic-center .about-main-content-nav-main-content-aside-topic-center-left h3{
+    color: var(--button-text);
+    font-size: larger;
+}
+
+.about-main-content-nav-main-content-aside-topic .about-main-content-nav-main-content-aside-topic-center .about-main-content-nav-main-content-aside-topic-center-left p{
+    color: var(--light-gray);
+}
+
+.about-main-content-nav-main-content-aside-topic .about-main-content-nav-main-content-aside-topic-center .about-main-content-nav-main-content-aside-topic-center-left p a{
+    color: var(--color-gold1);
+    text-decoration: none;
+}
+
+.about-main-content-nav-main-content-aside-topic .about-main-content-nav-main-content-aside-topic-center .about-main-content-nav-main-content-aside-topic-center-right{
+    flex: 0 0 25%;
+    background-image: var(--linear-gradient2);
+}
+
+.about-main-content-nav-main-content-aside-topic .about-main-content-nav-main-content-aside-topic-bottom{
+    background-color: aqua;
+    height: 400px;
+    margin-top: 30px;
+}
+
+@media only screen and (max-width:1000px) {
+    .about-main-content-nav-main-content-aside-topic .about-main-content-nav-main-content-aside-topic-center{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-main-content-nav-main-content-aside-topic .about-main-content-nav-main-content-aside-topic-center .about-main-content-nav-main-content-aside-topic-center-right{
+        height: 400px;
+        background-image: var(--linear-gradient2);
+    }
+}
