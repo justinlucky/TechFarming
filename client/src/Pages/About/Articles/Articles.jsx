@@ -51,7 +51,7 @@ const Articles = () => {
                         </Link>
                         <div className="notice">
                             <p>{article.category}</p>
-                            <p>{article.time} min red</p>
+                            <p>{article.time}&nbsp;&nbsp;min red</p>
                         </div>
                         <h3>{article.title}</h3>
                         <p>{article.description}</p>
