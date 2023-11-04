@@ -9,6 +9,8 @@ import Articles from './Articles/Articles';
 import Header from '../../Components/Header/Header';
 import SocialMediaAside from '../../Components/SocialMediaAside/SocialMediaAsside';
 import AboutNav from './AboutNav/AboutNav';
+import OurGrowth from './OurGrowth/OurGrowth';
+import Technology from './Technology/Technology';
 
 const About = () => {
   return (
@@ -43,8 +45,10 @@ const About = () => {
             <AboutContent1 />
           </div>
           <div className="about-main-content">
+            <OurGrowth/>
           </div>
           <div className="about-main-content">
+            <Technology/>
           </div>
           <div className="about-main-content">
           </div>

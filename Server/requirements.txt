@@ -1,2 +1,5 @@
 tensorflow
 numpy
+os 
+shutil
+PIL 

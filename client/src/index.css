@@ -67,6 +67,7 @@ code {
   --color-skyblue: #3498db;
   --color-purple:#800080;
   --color-aqua: aqua;
+  --color-navy:rgb(5, 5, 100);
   --color-overlay: rgba(20,20,20,0.5);
   --color-bisque: #f3dfc8;
 }

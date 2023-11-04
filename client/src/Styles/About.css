@@ -106,6 +106,43 @@
     }
 }
 
+@media only screen and (max-width: 600px){
+    #about .about-main .about-header{
+        background-image: url('../Assets/Images/OptimizeFarming.png');
+        height: 80vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #about .about-main .about-header .about-header-overlay h1{
+        padding: 0px 25px 0px 20px;
+        font-size: 40px;
+        color: var(--background-color2);
+        text-shadow: 3px 5px 5px var(--color-green);
+        font-family: var( --font-family-ubuntu);
+    }
+    #about .about-main .about-header .about-header-overlay p{
+        padding: 0px 30px 0px 20px;
+        font-size: larger;
+        color: var(--background-color6);
+    }
+}
+@media only screen and (max-width: 320px){
+    #about .about-main .about-header{
+        background-image: url('../Assets/Images/OptimizeFarming.png');
+        height: 70vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
 @media only screen and (min-width: 1500px) and (max-width:1600px) {
     .about-contents{
         width: 95%;
