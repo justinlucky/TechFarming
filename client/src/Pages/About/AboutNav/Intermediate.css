@@ -28,6 +28,19 @@
     color: var(--light-gray);
 }
 
+.about-main-content-nav-main-content-aside-topic .about-main-content-nav-main-content-aside-topic-center .about-main-content-nav-main-content-aside-topic-center-left ol{
+    color: var(--color-gold1);
+}
+
+.about-main-content-nav-main-content-aside-topic .about-main-content-nav-main-content-aside-topic-center .about-main-content-nav-main-content-aside-topic-center-left ul{
+    list-style: none;
+}
+
+.about-main-content-nav-main-content-aside-topic .about-main-content-nav-main-content-aside-topic-center .about-main-content-nav-main-content-aside-topic-center-left .slogan{
+    color: var(--button-text);
+    font-weight: bold;
+}
+
 .about-main-content-nav-main-content-aside-topic .about-main-content-nav-main-content-aside-topic-center .about-main-content-nav-main-content-aside-topic-center-left p a{
     color: var(--color-gold1);
     text-decoration: none;

@@ -43,7 +43,6 @@ const About = () => {
             <AboutContent1 />
           </div>
           <div className="about-main-content">
-            <AboutNav />
           </div>
           <div className="about-main-content">
           </div>
@@ -52,7 +51,9 @@ const About = () => {
           <div className="about-main-content">
             <Articles />
           </div>
-          <div className="about-main-content">can we?</div>
+          <div className="about-main-content">
+            <AboutNav />
+          </div>
         </div>
       </div>
       <Footer1 />
