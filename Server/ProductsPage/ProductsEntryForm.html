@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechFarming-Adding Product</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            background-color: #150b31;
+        }
+
+        body .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        body .container form {
+            background-color: rgba(200, 200, 200, 0.5);
+            padding: 25px 20px;
+        }
+
+        body .container form .form-items {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        body .container form .form-items .form-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        body .container form .form-items .form-item select{
+            height: 27px;
+        }
+
+        body .container form .form-items .form-item input {
+            height: 27px;
+        }
+
+        body .container form .form-items .form-item textarea:focus, select:focus{
+            outline: 1px solid #0000ff;
+        }
+
+        body .container form .form-items .form-item input:focus{
+            outline: 1px solid #0000ff;
+        }
+
+        body .container form .form-items .form-item button{
+            height: 30px;
+            background-color: #27ae60;
+            padding: 7px 15px;
+            color: #fafafa;
+            border: none;
+        }
+
+        body .container h1 {
+            color: #fafaff;
+            font-size: xx-large;
+        }
+
+        label {
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Add a New Product</h1>
+        <form id="productForm" method="POST" action="/add-product"> <!-- Set the correct server route -->
+            <div class="form-items">
+                <div class="form-item">
+                    <label for="category">Category:</label>
+                    <select name="category" id="category">
+                        <option value="Organic Vegetables">Organic Vegetables</option>
+                        <option value="Organic Leafy Vegetables">Organic Leafy Vegetables</option>
+                        <option value="Hydroponics and Aquaponics Vegetables">Hydroponics and Aquaponics Vegetables
+                        </option>
+                        <option value="Fruits">Fruits</option>
+                        <option value="Fish and Meat">Fish and Meat</option>
+                        <option value="Advanced Machinery">Advanced Machinery</option>
+                        <option value="Chemicals and Organics">Chemicals and Organics</option>
+                    </select>
+                </div>
+                <div class="form-item">
+                    <label for="name">Name:</label>
+                    <input 
+                      type="text" 
+                      name="name" 
+                      id="name" 
+                      required 
+                      autocomplete="on"
+                    >
+                </div>
+                <div class="form-item">
+                    <label for="price">Price:</label>
+                    <input 
+                      type="number" 
+                      step="0.01" name="price" 
+                      id="price" 
+                      required 
+                      autocomplete="on"
+                    >
+                </div>
+                <div class="form-item">
+                    <label for="availability">Availability:</label>
+                    <input 
+                      type="number" 
+                      name="availability" 
+                      id="availability" 
+                      autocomplete="on" 
+                      required
+                    >
+                </div>
+                <div class="form-item">
+                    <label for="offer">Offer:</label>
+                    <input 
+                      type="text" 
+                      name="offer" 
+                      id="offer"
+                    >
+                </div>
+                <div class="form-item">
+                    <label for="discount">Discount:</label>
+                    <input 
+                      type="number" 
+                      name="discount" 
+                      id="discount"
+                    >
+                </div>
+                <div class="form-item">
+                    <label for="description">Description:</label>
+                    <textarea 
+                      name="description" 
+                      id="description" 
+                      rows="10" 
+                      cols="10"
+                    ></textarea>
+                </div>
+                <div class="form-item">
+                    <label for="images">Images (comma-separated):</label>
+                    <input 
+                      type="file" 
+                      name="images" 
+                      id="images" 
+                      autocomplete="on" 
+                      required
+                    >
+                </div>
+                <div class="form-item">
+                    <label for="productionCost">Production Cost:</label>
+                    <input 
+                      type="number" 
+                      step="0.01" 
+                      name="productionCost" 
+                      id="productionCost" 
+                      autocomplete="on" 
+                      required>
+                </div>
+                <div class="form-item">
+                    <label for="packagingCost">Packaging Cost:</label>
+                    <input 
+                      type="number" 
+                      step="0.01" 
+                      name="packagingCost" 
+                      id="packagingCost" 
+                      autocomplete="on" 
+                      required
+                    >
+                </div>
+                <div class="form-item">
+                    <button type="submit">Add Product</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

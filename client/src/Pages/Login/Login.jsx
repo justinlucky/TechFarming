@@ -61,77 +61,6 @@ const Login = () => {
     <div id="user-log-in">
       <SocialMediaAside></SocialMediaAside>
       <div className="outer-container">
-        <div className="member-sign-up">
-          <div className="logo">
-            <img src={Logo} alt="Rakesh-Lungchuingam Company Logo" />
-          </div>
-          <div className="text-box">
-            <div className="typewriter-effect">
-              <h3>
-                <Typewriter options={{
-                  strings: [
-                    'A warm welcome to TechFarming',
-                    'We are a team of engineering enthusiasts passionate about organic cultivation',
-                    'We are a team of dedicated engineers working towards creating technologies for agricultural development',
-                    'Discover our innovative solutions for sustainable farming',
-                    'Join our community of like-minded farmers and technology enthusiasts',
-                    'Our server is a machine learning-powered decision-making hub',
-                    'Experience our data-driven e-commerce solution for smarter agricultural practices',
-                    'Explore our smart robotics technology revolutionizing agriculture',
-                    'Join us in shaping the future of farming with cutting-edge technology',
-                  ],
-                  autoStart: true,
-                  loop: true,
-                }}
-                />
-              </h3>
-            </div>
-            <p>Ready to elevate your agricultural, marketing and technological development experience?</p>
-            <p>
-              Explore the future of advanced farming and online marketing with <span className='tech'>Tech</span> <span className='farming'>Farming</span> Membership.
-            </p>
-            <div className="advantages-of-membership">
-              <h3>Why Join TechFarming Membership?</h3>
-              <ul>
-                <li>
-                  <span>Access Exclusive Features:</span>Unlock advanced tools and insights for smarter farming.
-                </li>
-                <li>
-                  <span>Priority Ordering:</span>Get ahead with priority access to new products and offers.
-                </li>
-                <li>
-                  <span>Exclusive Discounts: </span>Enjoy members-only pricing and special promotions.
-                </li>
-                <li>
-                  <span>Community Access:</span>Connect with fellow TechFarmers and share insights.
-                </li>
-                <li>
-                  <span>Personalized Recommendations:</span>Receive tailored product recommendations.
-                </li>
-              </ul>
-            </div>
-            <div className="request-to-be-member">
-              <h3>
-                Join TechFarming Membership Today and Harvest the Benefits!
-              </h3>
-              <p>
-                Become a member today to reap the rewards of modern agriculture. Don't miss out on this opportunity to supercharge your farming journey with TechFarming.
-              </p>
-              <p>
-                Ready to get started? Click the "Join Now" button to become a TechFarming member and embrace a more efficient and prosperous farming future.
-              </p>
-            </div>
-          </div>
-          <div className="button">
-            <input 
-             type="email" 
-             id='member-email'
-             name='email'
-             autoComplete='on'
-            />
-            <Link to='/api/signup/membership'>Join Now</Link>
-          </div>
-        </div>
         <div className="container">
           <form onSubmit={handleSubmit}>
             <h2>Sign In</h2>
@@ -222,6 +151,77 @@ const Login = () => {
                 </li>
               </ul>
             </div>
+          </div>
+        </div>
+        <div className="member-sign-up">
+          <div className="logo">
+            <img src={Logo} alt="Rakesh-Lungchuingam Company Logo" />
+          </div>
+          <div className="text-box">
+            <div className="typewriter-effect">
+              <h3>
+                <Typewriter options={{
+                  strings: [
+                    'A warm welcome to TechFarming',
+                    'We are a team of engineering enthusiasts passionate about organic cultivation',
+                    'We are a team of dedicated engineers working towards creating technologies for agricultural development',
+                    'Discover our innovative solutions for sustainable farming',
+                    'Join our community of like-minded farmers and technology enthusiasts',
+                    'Our server is a machine learning-powered decision-making hub',
+                    'Experience our data-driven e-commerce solution for smarter agricultural practices',
+                    'Explore our smart robotics technology revolutionizing agriculture',
+                    'Join us in shaping the future of farming with cutting-edge technology',
+                  ],
+                  autoStart: true,
+                  loop: true,
+                }}
+                />
+              </h3>
+            </div>
+            <p>Ready to elevate your agricultural, marketing and technological development experience?</p>
+            <p>
+              Explore the future of advanced farming and online marketing with <span className='tech'>Tech</span> <span className='farming'>Farming</span> Membership.
+            </p>
+            <div className="advantages-of-membership">
+              <h3>Why Join TechFarming Membership?</h3>
+              <ul>
+                <li>
+                  <span>Access Exclusive Features:</span>Unlock advanced tools and insights for smarter farming.
+                </li>
+                <li>
+                  <span>Priority Ordering:</span>Get ahead with priority access to new products and offers.
+                </li>
+                <li>
+                  <span>Exclusive Discounts: </span>Enjoy members-only pricing and special promotions.
+                </li>
+                <li>
+                  <span>Community Access:</span>Connect with fellow TechFarmers and share insights.
+                </li>
+                <li>
+                  <span>Personalized Recommendations:</span>Receive tailored product recommendations.
+                </li>
+              </ul>
+            </div>
+            <div className="request-to-be-member">
+              <h3>
+                Join TechFarming Membership Today and Harvest the Benefits!
+              </h3>
+              <p>
+                Become a member today to reap the rewards of modern agriculture. Don't miss out on this opportunity to supercharge your farming journey with TechFarming.
+              </p>
+              <p>
+                Ready to get started? Click the "Join Now" button to become a TechFarming member and embrace a more efficient and prosperous farming future.
+              </p>
+            </div>
+          </div>
+          <div className="button">
+            <input 
+             type="email" 
+             id='member-email'
+             name='email'
+             autoComplete='on'
+            />
+            <Link to='/api/signup/membership'>Join Now</Link>
           </div>
         </div>
       </div>

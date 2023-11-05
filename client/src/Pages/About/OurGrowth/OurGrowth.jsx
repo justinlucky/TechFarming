@@ -4,11 +4,13 @@ import { FaCube, FaFacebook, FaLinkedinIn, FaWhatsapp, FaYoutube } from 'react-i
 import { Link } from 'react-router-dom';
 
 const OurGrowth = () => {
-    const [showDescription, setShowDescription] = useState(false);
 
-    const toggleDescription = () => {
-        setShowDescription(!showDescription);
+    const toggleDescription = (index) => {
+        const newShowDescriptions = [...showDescription];
+        newShowDescriptions[index] = !newShowDescriptions[index];
+        setShowDescription(newShowDescriptions);
     }
+
     const achievements = [
         {
             year: 'Dec-2024',
@@ -36,6 +38,8 @@ const OurGrowth = () => {
             description: 'Where are you?',
         }
     ];
+
+    const [showDescription, setShowDescription] = useState(Array(achievements.length).fill(false));
     return (
         <div className='about-main-content-growth'>
             <div className="about-main-content-growth-left">
@@ -56,14 +60,14 @@ const OurGrowth = () => {
                         <li key={index}>
                             <div className="about-main-content-growth-right-icon">
                                 <div className="about-main-content-growth-right-icon-round">
-                                    <button onClick={toggleDescription}><FaCube /></button>
+                                    <button onClick={ () => toggleDescription(index)}><FaCube /></button>
                                 </div>
                                 <div className="about-main-content-growth-right-icon-line"></div>
                             </div>
                             <div className="about-main-content-growth-right-content">
                                 <p>{achievement.year}</p>
                                 <h3>{achievement.title}</h3>
-                                {showDescription && (
+                                {showDescription[index] && (
                                     <p>{achievement.description}</p>
                                 )}
                             </div>

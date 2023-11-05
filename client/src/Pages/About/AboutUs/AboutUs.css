@@ -1,0 +1,85 @@
+.about-main-content-top{
+    display: flex;
+    padding: 25px 20px;
+    gap: 10px;
+}
+
+.about-main-content-top .about-main-content-top-left{
+    flex: 1;
+}
+
+.about-main-content-top .about-main-content-top-left .images{
+    background-color: var(--color-aqua);
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    position: relative;
+}
+.about-main-content-top .about-main-content-top-right{
+    flex: 1;
+}
+
+.about-main-content-top .about-main-content-top-right h4{
+    color: var(--color-gold1);
+    font-size: larger;
+    font-weight: 400;
+}
+
+.about-main-content-top .about-main-content-top-right h2{
+    font-size: 37px;
+    color: var(--button-text);
+}
+
+.about-main-content-top .about-main-content-top-right p{
+    color: var(--light-gray);
+}
+
+.about-main-content-top .about-main-content-top-right a{
+    background-color: var(--button-tertiary-background);
+    padding: 7px 15px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    color: var(--button-text);
+    gap: 5px;
+    transition: all .3s ease-in-out;
+}
+
+.about-main-content-top .about-main-content-top-right a:hover{
+    background-color: var(--button-tertiary-hover);
+}
+
+
+@media only screen and (max-width: 768px) {
+    .about-main-content-top{
+        display: flex;
+        padding: 20px 15px;
+        flex-direction: column;
+    }
+
+    .about-main-content-top .about-main-content-top-right h2{
+        font-size: 34px;
+        color: var(--button-text);
+    }
+    .about-main-content-top .about-main-content-top-right a{
+        background-color: var(--button-tertiary-background);
+        padding: 7px 15px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+        color: var(--button-text);
+        gap: 5px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    .about-main-content-top .about-main-content-top-right h2{
+        font-size: 30px;
+        color: var(--button-text);
+    }
+}

@@ -17,13 +17,14 @@ import ShippingReturns from './Pages/ShippingReturns/ShippingReturns';
 import Wishlist from './Pages/Wishlist/Wishlist';
 import Category from './Pages/Category/Category';
 import Testimonials from './Pages/Testimonials/Testimonials';
-import SellerSignUp from './Pages/SignUp/SellerSignUp/SellerSignUp';
 import MemberSignUp from './Pages/SignUp/MemberSignUp/MemberSignUp';
 import AdminSignUp from './Pages/SignUp/AdminSignUp/AdminSignUp';
 import SellerSignIn from './Pages/Login/SellerSignIn/SellerSignIn';
 import Logo from './Components/FormLogo/Logo';
 import SellerTerm from './Pages/SignUp/SellerSignUp/SellerTermsandCondition/SellerTerm';
 import SellerCondition from './Pages/SignUp/SellerSignUp/SellerTermsandCondition/SellerCondition';
+import SellerSignUp from './Pages/SignUp/SellerSignUp/SellerSignUp';
+import Services from './Pages/Services/Services';
 
 
 function App() {
@@ -44,7 +45,7 @@ function App() {
               <Route path='/login' Component={Login}></Route>
               <Route path='/api/login/sellers' Component={SellerSignIn}></Route>
               <Route path='/api/signup/users' Component={Signup}></Route>
-              <Route path='/api/signup/sellers' Component={SellerSignUp}></Route>
+              <Route path='/api/signup/sellers' Component={SellerSignUp}/>
               <Route path='/api/signup/membership' Component={MemberSignUp}></Route>
               <Route path='/api/signup/admin' Component={AdminSignUp}></Route>
               <Route path='/dashboard' Component={Dashboard}></Route>
@@ -58,6 +59,7 @@ function App() {
               <Route path='/wishlist' Component={Wishlist}></Route>
               <Route path='/category' Component={Category}></Route>
               <Route path='/testimonials' Component={Testimonials}></Route>
+              <Route path='/services' Component={Services}></Route>
             </Routes>
           </section>
         </div>

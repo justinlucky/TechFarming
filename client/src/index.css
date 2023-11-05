@@ -12,6 +12,11 @@ code {
     monospace;
 }
 
+p::selection, h1::selection, h2::selection, h3::selection, h4::selection{
+  background-color: var(--primary-color);
+  color: var(--color-green);
+}
+
 :root {
   --font-family-gabarito: 'Gabarito', sans-serif;
   --font-family-jost: 'Jost', sans-serif;

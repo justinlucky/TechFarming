@@ -1,0 +1,201 @@
+{
+    "products": [
+      {
+        "category": "Organic Vegetables",
+        "name": "Organic Tomatoes",
+        "price": 2.99,
+        "availability": 150,
+        "offer": "Buy 2 Get 1 Free",
+        "discount": 10,
+        "description": "Fresh, organic tomatoes grown using sustainable farming practices.",
+        "images": ["tomato_image_1.jpg", "tomato_image_2.jpg"],
+        "cost": {
+          "production_cost": 1.5,
+          "packaging_cost": 0.2
+        }
+      },
+      {
+        "category": "Organic Vegetables",
+        "name": "Organic Cucumbers",
+        "price": 1.99,
+        "availability": 120,
+        "offer": "25% Off",
+        "discount": 25,
+        "description": "Crispy and delicious organic cucumbers, perfect for salads.",
+        "images": ["cucumber_image_1.jpg", "cucumber_image_2.jpg"],
+        "cost": {
+          "production_cost": 1.2,
+          "packaging_cost": 0.15
+        }
+      },
+      {
+        "category": "Organic Leafy Vegetables",
+        "name": "Organic Spinach",
+        "price": 3.49,
+        "availability": 80,
+        "offer": null,
+        "discount": 0,
+        "description": "Nutrient-rich organic spinach leaves for a healthy diet.",
+        "images": ["spinach_image_1.jpg"],
+        "cost": {
+          "production_cost": 2.0,
+          "packaging_cost": 0.3
+        }
+      },
+      {
+        "category": "Organic Leafy Vegetables",
+        "name": "Organic Kale",
+        "price": 2.99,
+        "availability": 90,
+        "offer": null,
+        "discount": 0,
+        "description": "Fresh and organic kale leaves, perfect for smoothies.",
+        "images": ["kale_image_1.jpg"],
+        "cost": {
+          "production_cost": 2.2,
+          "packaging_cost": 0.25
+        }
+      },
+      {
+        "category": "Hydroponics and Aquaponics Vegetables",
+        "name": "Hydroponic Lettuce",
+        "price": 3.99,
+        "availability": 60,
+        "offer": "20% Off",
+        "discount": 20,
+        "description": "Hydroponically grown, pesticide-free lettuce leaves.",
+        "images": ["lettuce_image_1.jpg"],
+        "cost": {
+          "production_cost": 2.5,
+          "packaging_cost": 0.4
+        }
+      },
+      {
+        "category": "Hydroponics and Aquaponics Vegetables",
+        "name": "Aquaponic Basil",
+        "price": 4.49,
+        "availability": 70,
+        "offer": null,
+        "discount": 0,
+        "description": "Fresh basil from our aquaponic system, full of flavor.",
+        "images": ["basil_image_1.jpg"],
+        "cost": {
+          "production_cost": 3.0,
+          "packaging_cost": 0.35
+        }
+      },
+      {
+        "category": "Fruits",
+        "name": "Apples",
+        "price": 1.49,
+        "availability": 180,
+        "offer": "15% Off",
+        "discount": 15,
+        "description": "Crisp and sweet apples from local orchards.",
+        "images": ["apple_image_1.jpg", "apple_image_2.jpg"],
+        "cost": {
+          "production_cost": 1.0,
+          "packaging_cost": 0.2
+        }
+      },
+      {
+        "category": "Fruits",
+        "name": "Bananas",
+        "price": 1.29,
+        "availability": 200,
+        "offer": null,
+        "discount": 0,
+        "description": "Ripe and fresh bananas, a great source of energy.",
+        "images": ["banana_image_1.jpg"],
+        "cost": {
+          "production_cost": 0.9,
+          "packaging_cost": 0.15
+        }
+      },
+      {
+        "category": "Fish and Meat",
+        "name": "Salmon Fillet",
+        "price": 10.99,
+        "availability": 25,
+        "offer": null,
+        "discount": 0,
+        "description": "Premium salmon fillet, perfect for grilling or baking.",
+        "images": ["salmon_image_1.jpg"],
+        "cost": {
+          "production_cost": 8.0,
+          "packaging_cost": 0.5
+        }
+      },
+      {
+        "category": "Fish and Meat",
+        "name": "Grass-Fed Beef",
+        "price": 12.99,
+        "availability": 30,
+        "offer": "Buy 1 Get 1 Half Off",
+        "discount": 50,
+        "description": "High-quality grass-fed beef for your favorite dishes.",
+        "images": ["beef_image_1.jpg", "beef_image_2.jpg"],
+        "cost": {
+          "production_cost": 9.0,
+          "packaging_cost": 0.6
+        }
+      },
+      {
+        "category": "Advanced Machinery",
+        "name": "Precision Seeder",
+        "price": 3500.0,
+        "availability": 10,
+        "offer": "10% Off",
+        "discount": 10,
+        "description": "High-tech precision seeder for efficient planting.",
+        "images": ["seeder_image_1.jpg"],
+        "cost": {
+          "production_cost": 2800.0,
+          "packaging_cost": 200.0
+        }
+      },
+      {
+        "category": "Advanced Machinery",
+        "name": "Autonomous Tractor",
+        "price": 6500.0,
+        "availability": 5,
+        "offer": null,
+        "discount": 0,
+        "description": "Autonomous tractor for modern farming operations.",
+        "images": ["tractor_image_1.jpg"],
+        "cost": {
+          "production_cost": 5200.0,
+          "packaging_cost": 300.0
+        }
+      },
+      {
+        "category": "Chemicals and Organics",
+        "name": "Organic Pesticides",
+        "price": 15.99,
+        "availability": 40,
+        "offer": null,
+        "discount": 0,
+        "description": "Safe and effective organic pesticides for crop protection.",
+        "images": ["pesticides_image_1.jpg"],
+        "cost": {
+          "production_cost": 10.0,
+          "packaging_cost": 1.5
+        }
+      },
+      {
+        "category": "Chemicals and Organics",
+        "name": "NPK Fertilizer",
+        "price": 9.99,
+        "availability": 60,
+        "offer": "Buy 1 Get 1 Free",
+        "discount": 100,
+        "description": "NPK fertilizer for balanced plant nutrition.",
+        "images": ["npk_fertilizer_image_1.jpg"],
+        "cost": {
+          "production_cost": 5.0,
+          "packaging_cost": 1.0
+        }
+      }
+    ]
+  }
+  

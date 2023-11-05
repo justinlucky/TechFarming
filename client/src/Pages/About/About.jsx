@@ -11,6 +11,7 @@ import SocialMediaAside from '../../Components/SocialMediaAside/SocialMediaAssid
 import AboutNav from './AboutNav/AboutNav';
 import OurGrowth from './OurGrowth/OurGrowth';
 import Technology from './Technology/Technology';
+import AboutUs from './AboutUs/AboutUs';
 
 const About = () => {
   return (
@@ -42,18 +43,19 @@ const About = () => {
         </div>
         <div className="about-contents">
           <div className="about-main-content">
-            <AboutContent1 />
+            <AboutUs/>
           </div>
           <div className="about-main-content">
-            <OurGrowth/>
+          <AboutContent1 />
           </div>
           <div className="about-main-content">
-            <Technology/>
+          <OurGrowth/>
           </div>
           <div className="about-main-content">
+          <Articles />
           </div>
           <div className="about-main-content">
-            <Articles />
+          <Technology/>
           </div>
           <div className="about-main-content">
             <AboutNav />

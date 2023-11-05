@@ -5,6 +5,7 @@ const cors = require('cors');
 const bcrypt = require('bcrypt');
 const bodyParser = require('body-parser');
 const { spawn } = require('child_process');
+const fs = require('fs');
 
 const app = express();
 const port = 9000;
@@ -12,8 +13,21 @@ const saltRounds = 10;
 app.use(cors());
 app.use(express.json());
 app.use(bodyParser.json());
-//chat bot
-//python code navigation routes
+app.use(express.urlencoded({ extended: true }));
+
+//products uploading routes
+app.get('/api/upload-new-products', (req, res) => {
+  res.sendFile(__dirname + '/ProductsPage/ProductsEntryForm.html');
+});
+
+app.post('/add-product', (req, res) => {
+  const newProduct = req.body;
+  const products = JSON.parse(fs.readFileSync('Products.json'));
+  products.products.push(newProduct);
+  fs.writeFileSync('products.json', JSON.stringify(products, null, 2));
+  res.redirect('/api/upload-new-products');
+});
+
 app.post('/classify-image', (req, res) => {
   // Receive image data from the request body
   const image = req.body.imageData;
