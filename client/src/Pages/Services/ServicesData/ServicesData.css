@@ -1,0 +1,261 @@
+.services-content-list{
+    padding: 25px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.services-content-list .services-content-list-top{
+    display: flex;
+    align-items: center;
+} 
+
+.services-content-list .services-content-list-top h2{
+    flex: 1;
+    color: var(--button-text);
+    font-size: xx-large;
+}
+
+.services-content-list .services-content-list-top h2 span:nth-child(1){
+    color: var(--button-tertiary-background);
+}
+
+.services-content-list .services-content-list-top h2 span:nth-child(2){
+    color: var(--color-gold1);
+}
+
+.services-content-list .services-content-list-top input{
+    height: 32px;
+    padding: 5px 20px;
+    flex: 1;
+    border-radius: 27px;
+    max-width: 400px;
+    border: none;
+    color: var(--color-gold1);
+}
+
+.services-content-list .services-content-list-top input:focus{
+    outline: 1px solid var(--button-tertiary-background);
+    border: none;
+}
+
+.services-content-list .services-content-list-center ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+    margin-left: -40px;
+}
+
+.services-content-list .services-content-list-center ul li{
+    width: 320px;
+    padding: 25px 20px;
+    position: relative;
+    background-color: var(--background-color11);
+    cursor: pointer;
+}
+.services-content-list .services-content-list-center ul li .offer{
+    background-color: var(--color-red);
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 70px;
+    width: 70px;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-dark);
+    text-align: center;
+    margin-top: -40px;
+    margin-right: -40px;
+    font-size: small;
+}
+
+.services-content-list .services-content-list-center ul li img{
+    height: 300px;
+    width: 100%;
+    transition: all .3s ease-in-out;
+}
+
+.services-content-list .services-content-list-center ul li img:hover{
+    transform: scale(1.03);
+}
+
+.services-content-list .services-content-list-center ul li .links{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.services-content-list .services-content-list-center ul li h3{
+    color: var(--text-dark);
+    font-size: larger;
+}
+
+.services-content-list .services-content-list-center ul li .desc{
+    color: var(--light-gray);
+}
+
+.services-content-list .services-content-list-center ul li .links a{
+    text-decoration: none;
+    color: var(--button-text);
+}
+
+.services-content-list .services-content-list-center ul li .cost{
+    color: var(--color-gold1);
+    text-align: center;
+}
+
+.services-content-list .services-content-list-center ul li .links a:nth-child(1){
+    background-color: var(--button-tertiary-background);
+    padding: 5px 15px;
+}
+
+.services-content-list .services-content-list-center ul li .links a:nth-child(2){
+    border: 1px solid var(--button-tertiary-background);
+    padding: 5px 15px;
+    background-color: var(--background-color11);
+}
+
+@media only screen and (max-width: 1239px) {
+    .services-content-list .services-content-list-center ul{
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        justify-content: center;
+        gap: 50px;
+        margin-top: 50px;
+        margin-left: -40px;
+    }
+    
+    .services-content-list .services-content-list-center ul li{
+        width: 310px;
+        padding: 25px 20px;
+        position: relative;
+        background-color: var(--background-color11);
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .services-content-list .services-content-list-center ul{
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        justify-content: center;
+        gap: 50px;
+        margin-top: 50px;
+        margin-left: -40px;
+    }
+    
+    .services-content-list .services-content-list-center ul li{
+        width: 300px;
+        padding: 25px 20px;
+        position: relative;
+        background-color: var(--background-color11);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .services-content-list .services-content-list-top{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+    } 
+    .services-content-list .services-content-list-top input{
+        height: 30px;
+        padding: 10px 15px;
+        flex: 1;
+        border-radius: 27px;
+        width: 100%;
+        border: none;
+    }
+
+    .services-content-list .services-content-list-center ul{
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        justify-content: center;
+        gap: 50px;
+        margin-top: 70px;
+        margin-left: -40px;
+    }
+
+    .services-content-list .services-content-list-center ul li .offer{
+        background-color: var(--color-red);
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 60px;
+        width: 60px;
+        padding: 7px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--text-dark);
+        text-align: center;
+        margin-top: -20px;
+        margin-right: -20px;
+        font-size: small;
+    }
+    
+    
+}
+
+@media only screen and (max-width: 400px){
+    .services-content-list{
+        padding: 20px 15px;
+        display: flex;
+        flex-direction: column;
+    }
+    .services-content-list .services-content-list-center ul li img{
+        height: 270px;
+        width: 100%;
+        transition: all .3s ease-in-out;
+    }
+    
+    .services-content-list .services-content-list-center ul li img:hover{
+        transform: scale(1.03);
+    }
+    .services-content-list .services-content-list-center ul li .offer{
+        background-color: var(--color-red);
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 60px;
+        width: 60px;
+        padding: 7px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--text-dark);
+        text-align: center;
+        margin-top: -15px;
+        margin-right: -15px;
+        font-size: small;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .services-content-list{
+        padding: 20px 7px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .services-content-list .services-content-list-center ul li img{
+        height: 270px;
+        width: 100%;
+        transition: all .3s ease-in-out;
+    }
+    
+    .services-content-list .services-content-list-center ul li img:hover{
+        transform: scale(1.03);
+    }
+}

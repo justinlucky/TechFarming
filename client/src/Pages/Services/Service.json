@@ -1,0 +1,57 @@
+[
+    {
+      "title": "Pest Scanning Service",
+      "images": ["pest_scanning_img1.jpg", "pest_scanning_img2.jpg"],
+      "description": "Our Pest Scanning Service helps you identify and eliminate pests in your fields.",
+      "cost": 50,
+      "offer": "20% off this season!",
+      "bookLink": "/book/pest-scanning",
+      "learnMoreLink": "/learn-more/pest-scanning"
+    },
+    {
+      "title": "Soil Parameter Monitoring and Management",
+      "images": ["soil_management_img1.jpg", "soil_management_img2.jpg"],
+      "description": "Optimize your crop yields with our Soil Parameter Monitoring and Management service.",
+      "cost": 75,
+      "offer": null,
+      "bookLink": "/book/soil-management",
+      "learnMoreLink": "/learn-more/soil-management"
+    },
+    {
+      "title": "Laser-Based Weed Control System",
+      "images": ["weed_control_img1.jpg", "weed_control_img2.jpg"],
+      "description": "Say goodbye to weeds with our Laser-Based Weed Control System.",
+      "cost": 60,
+      "offer": "Limited time offer: Buy one, get one free!",
+      "bookLink": "/book/weed-control",
+      "learnMoreLink": "/learn-more/weed-control"
+    },
+    {
+      "title": "Pest and Plant Disease Detection and Elimination",
+      "images": ["pest_disease_img1.jpg", "pest_disease_img2.jpg"],
+      "description": "Protect your crops from diseases and pests with our advanced detection and elimination service.",
+      "cost": 90,
+      "offer": null,
+      "bookLink": "/book/pest-disease",
+      "learnMoreLink": "/learn-more/pest-disease"
+    },
+    {
+      "title": "Hydroponics and Aquaponics Vegetation Management",
+      "images": ["hydroponics_img1.jpg", "aquaponics_img2.jpg"],
+      "description": "Manage your hydroponic and aquaphonic crops for optimal growth and yield.",
+      "cost": 120,
+      "offer": "10% off for new customers!",
+      "bookLink": "/book/hydro-aquaponics",
+      "learnMoreLink": "/learn-more/hydro-aquaponics"
+    },
+    {
+      "title": "Irrigation Management System",
+      "images": ["irrigation_img1.jpg", "irrigation_img2.jpg"],
+      "description": "Efficiently manage your irrigation systems with our specialized service.",
+      "cost": 40,
+      "offer": "Free consultation for new clients!",
+      "bookLink": "/book/irrigation-management",
+      "learnMoreLink": "/learn-more/irrigation-management"
+    }
+  ]
+  

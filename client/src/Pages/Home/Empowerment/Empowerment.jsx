@@ -99,7 +99,7 @@ const Empowerment = () => {
                 </ul>
                 <div className="home-container-content-empowerment-left-buttons">
                     <Link to='/#'>Discover more Solution<FaCaretRight /></Link>
-                    <Link to='/#'>Book Services</Link>
+                    <Link to='/services'>Book Services</Link>
                 </div>
             </div>
             <div className="home-container-content-empowerment-right">
