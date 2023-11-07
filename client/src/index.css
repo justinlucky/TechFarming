@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-bisque);
 }
 
 code {
@@ -59,6 +60,7 @@ p::selection, h1::selection, h2::selection, h3::selection, h4::selection{
   --neon-glow: 0 0 10px rgba(52, 152, 219, 0.8);
   --linear-gradient1: linear-gradient(to right, #3498db, #2071e8);
   --linear-gradient2: linear-gradient(to right, #de65ac, #c90076);
+  --linear-gradient3: linear-gradient(to top, #de65ac, #c90076);
   --radial-gradient: radial-gradient(circle, #3498db, transparent);
   --background-green: #c3eec3;
   --background-blue: #beb6ee;

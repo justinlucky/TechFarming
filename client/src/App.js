@@ -25,6 +25,8 @@ import SellerTerm from './Pages/SignUp/SellerSignUp/SellerTermsandCondition/Sell
 import SellerCondition from './Pages/SignUp/SellerSignUp/SellerTermsandCondition/SellerCondition';
 import SellerSignUp from './Pages/SignUp/SellerSignUp/SellerSignUp';
 import Services from './Pages/Services/Services';
+import AiMlServices from './Pages/Services/AIMLService/AiMlServices';
+import BookingServices from './Pages/Services/BookingServices/BookingServices';
 
 
 function App() {
@@ -60,6 +62,8 @@ function App() {
               <Route path='/category' Component={Category}></Route>
               <Route path='/testimonials' Component={Testimonials}></Route>
               <Route path='/services' Component={Services}></Route>
+              <Route path='/services/ai-and-ml-services' Component={AiMlServices}/>
+              <Route path='/services/booking-services' Component={BookingServices}/>
             </Routes>
           </section>
         </div>

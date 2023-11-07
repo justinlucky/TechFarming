@@ -22,7 +22,7 @@ const ServicesData = () => {
                 },
             ],
             "offer": "20% off this season!",
-            "bookLink": "/book/pest-scanning",
+            "bookLink": "/services/booking-services",
             "learnMoreLink": "/learn-more/pest-scanning",
             "link1Text": "Book Now",
             "link2Text": "Learn More",
@@ -43,7 +43,7 @@ const ServicesData = () => {
                 },
             ],
             "offer": 'Most Popular',
-            "bookLink": "/book/soil-management",
+            "bookLink": "/services/booking-services",
             "learnMoreLink": "/learn-more/soil-management",
             "link1Text": "Book Now",
             "link2Text": "Learn More",
@@ -52,7 +52,7 @@ const ServicesData = () => {
             "title": "Laser-Based Weed Control System",
             "images": [
                 {
-                    image:Nice,
+                    image: Nice,
                     imageAlt: 'Weed Control System',
                 },
             ],
@@ -64,7 +64,7 @@ const ServicesData = () => {
                 },
             ],
             "offer": "Book one, get one free!",
-            "bookLink": "/book/weed-control",
+            "bookLink": "/services/booking-services",
             "learnMoreLink": "/learn-more/weed-control",
             "link1Text": "Book Now",
             "link2Text": "Learn More",
@@ -85,7 +85,7 @@ const ServicesData = () => {
                 },
             ],
             "offer": null,
-            "bookLink": "/book/pest-disease",
+            "bookLink": "/services/booking-services",
             "learnMoreLink": "/learn-more/pest-disease",
             "link1Text": "Book Now",
             "link2Text": "Learn More",
@@ -95,7 +95,7 @@ const ServicesData = () => {
             "images": [
                 {
                     image: Nice,
-                    imageAlt:'Hydroponic and aquaphonic Vegetation Management',
+                    imageAlt: 'Hydroponic and aquaphonic Vegetation Management',
                 },
             ],
             "description": "Manage your hydroponic and aquaphonic crops for optimal growth and yield.",
@@ -106,7 +106,7 @@ const ServicesData = () => {
                 },
             ],
             "offer": "10% off for new clients!",
-            "bookLink": "/book/hydro-aquaponics",
+            "bookLink": "/services/booking-services",
             "learnMoreLink": "/learn-more/hydro-aquaponics",
             "link1Text": "Book Now",
             "link2Text": "Learn More",
@@ -127,7 +127,7 @@ const ServicesData = () => {
                 },
             ],
             "offer": "50% Free for new clients!",
-            "bookLink": "/book/irrigation-management",
+            "bookLink": "/services/booking-services",
             "learnMoreLink": "/learn-more/irrigation-management",
             "link1Text": "Book Now",
             "link2Text": "Learn More",
@@ -148,8 +148,8 @@ const ServicesData = () => {
                 },
             ],
             "offer": null,
-            "bookLink": "/book/ai-ml-services",
-            "learnMoreLink": "/learn-more/ai-ml-services",
+            "bookLink": "/services/booking-services",
+            "learnMoreLink": "/services/ai-and-ml-services",
             "link1Text": "Book Now",
             "link2Text": "Learn More",
         },
@@ -169,7 +169,7 @@ const ServicesData = () => {
                 },
             ],
             "offer": "90% Scholarship",
-            "bookLink": "/book/internship",
+            "bookLink": "/services/booking-services",
             "learnMoreLink": "/learn-more/internship",
             "link1Text": "Book Now",
             "link2Text": "Learn More",
@@ -195,14 +195,19 @@ const ServicesData = () => {
                     {filteredServices.length > 0 ? (
                         filteredServices.map((service, index) => (
                             <li key={index}>
-                                <img src={service.images[0].image} alt={service.images[0].imageAlt} />
-                                <h3>{service.title}</h3>
-                                <p className='desc'>{service.description}</p>
-                                <p className='cost'>
-                                    Cost: <FaRupeeSign />
-                                    <span>{service.cost[0].min}</span> - <span><FaRupeeSign />{service.cost[0].max}</span>
-                                </p>
-                                {service.offer ? <p className='offer'> {service.offer}</p> : null}
+                                <div className="services-image">
+                                    <img src={service.images[0].image} alt={service.images[0].imageAlt} />
+                                </div>
+                                <div className="service-content">
+                                    <h3>{service.title}</h3>
+                                    <p className='desc'>{service.description}</p>
+                                    <p className='cost'>
+                                        Cost: <FaRupeeSign />
+                                        <span>{service.cost[0].min}</span> - <span><FaRupeeSign />{service.cost[0].max}</span>
+                                    </p>
+                                    {service.offer ? <p className='offer'> {service.offer}</p> : null}
+                                </div>
+                                <div className="divider"></div>
                                 <div className="links">
                                     <Link to={service.bookLink}>{service.link1Text}</Link>
                                     <Link to={service.learnMoreLink}>{service.link2Text}</Link>

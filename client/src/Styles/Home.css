@@ -68,12 +68,6 @@
     background-color: var(--background-color11);
     padding: 30px 20px;
 }
-@media only screen and (min-width: 1500px) and (max-width:1600px) {
-    .home-container{
-        width: 95%;
-        margin: 0 auto;
-    }
-}
 
 @media (min-width: 1660px) {
     .home-container {

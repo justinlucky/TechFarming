@@ -12,7 +12,7 @@
 .services-content-list .services-content-list-top h2{
     flex: 1;
     color: var(--button-text);
-    font-size: xx-large;
+    font-size: 37px;
 }
 
 .services-content-list .services-content-list-top h2 span:nth-child(1){
@@ -52,10 +52,33 @@
     width: 320px;
     padding: 25px 20px;
     position: relative;
+    cursor: pointer;
     background-color: var(--background-color11);
     cursor: pointer;
+    border-radius: 30px;
 }
-.services-content-list .services-content-list-center ul li .offer{
+
+.services-content-list .services-content-list-center ul li .divider{
+    background-image: var(--linear-gradient2);
+    height: 5px;
+}
+
+.services-content-list .services-content-list-center ul li .service-content h3{
+    color: var(--color-gold1);
+    font-size: x-large;
+}
+
+.services-content-list .services-content-list-center ul li .service-content .desc{
+    color: var(--light-gray);
+}
+
+.services-content-list .services-content-list-center ul li .service-content .cost{
+    color: var(--button-text);
+    font-size: x-large;
+    text-align: center;
+}
+
+.services-content-list .services-content-list-center ul li .service-content .offer{
     background-color: var(--color-red);
     position: absolute;
     top: 0;
@@ -74,39 +97,35 @@
     font-size: small;
 }
 
-.services-content-list .services-content-list-center ul li img{
+.services-content-list .services-content-list-center ul li .services-image img{
     height: 300px;
     width: 100%;
     transition: all .3s ease-in-out;
+    border-radius: 20px;
 }
 
-.services-content-list .services-content-list-center ul li img:hover{
+.services-content-list .services-content-list-center ul li .services-image img:hover{
     transform: scale(1.03);
 }
 
 .services-content-list .services-content-list-center ul li .links{
     margin-top: 30px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
-.services-content-list .services-content-list-center ul li h3{
+.services-content-list .services-content-list-center ul li .services-image h3{
     color: var(--text-dark);
     font-size: larger;
 }
 
-.services-content-list .services-content-list-center ul li .desc{
+.services-content-list .services-content-list-center ul li .services-image .desc{
     color: var(--light-gray);
 }
 
 .services-content-list .services-content-list-center ul li .links a{
     text-decoration: none;
     color: var(--button-text);
-}
-
-.services-content-list .services-content-list-center ul li .cost{
-    color: var(--color-gold1);
-    text-align: center;
 }
 
 .services-content-list .services-content-list-center ul li .links a:nth-child(1){
@@ -140,6 +159,16 @@
 }
 
 @media only screen and (max-width: 1000px) {
+    .services-content-list{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .services-content-list .services-content-list-top h2{
+        flex: 1;
+        color: var(--button-text);
+        font-size: 34px;
+    }
     .services-content-list .services-content-list-center ul{
         display: flex;
         flex-wrap: wrap;
@@ -152,9 +181,19 @@
     
     .services-content-list .services-content-list-center ul li{
         width: 300px;
-        padding: 25px 20px;
+        padding: 25px;
         position: relative;
         background-color: var(--background-color11);
+    }
+    .services-content-list .services-content-list-center ul li .service-content h3{
+        color: var(--color-gold1);
+        font-size: medium;
+    }
+
+    .services-content-list .services-content-list-center ul li .service-content .cost{
+        color: var(--button-text);
+        font-size: large;
+        text-align: center;
     }
 }
 
@@ -185,7 +224,7 @@
         margin-left: -40px;
     }
 
-    .services-content-list .services-content-list-center ul li .offer{
+    .services-content-list .services-content-list-center ul li .services-image .offer{
         background-color: var(--color-red);
         position: absolute;
         top: 0;
@@ -199,8 +238,8 @@
         justify-content: center;
         color: var(--text-dark);
         text-align: center;
-        margin-top: -20px;
-        margin-right: -20px;
+        margin-top: -15px;
+        margin-right: -15px;
         font-size: small;
     }
     
@@ -222,7 +261,7 @@
     .services-content-list .services-content-list-center ul li img:hover{
         transform: scale(1.03);
     }
-    .services-content-list .services-content-list-center ul li .offer{
+    .services-content-list .services-content-list-center ul li .services-image .offer{
         background-color: var(--color-red);
         position: absolute;
         top: 0;
@@ -236,8 +275,8 @@
         justify-content: center;
         color: var(--text-dark);
         text-align: center;
-        margin-top: -15px;
-        margin-right: -15px;
+        margin-top: -10px;
+        margin-right: -10px;
         font-size: small;
     }
 }
@@ -249,13 +288,13 @@
         flex-direction: column;
     }
     
-    .services-content-list .services-content-list-center ul li img{
+    .services-content-list .services-content-list-center ul li .services-image img{
         height: 270px;
         width: 100%;
         transition: all .3s ease-in-out;
     }
     
-    .services-content-list .services-content-list-center ul li img:hover{
+    .services-content-list .services-content-list-center ul li .services-image img:hover{
         transform: scale(1.03);
     }
 }
