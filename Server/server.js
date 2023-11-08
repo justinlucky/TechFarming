@@ -33,7 +33,7 @@ app.post('/classify-image', (req, res) => {
   const image = req.body.imageData;
 
   // Call the Python script
-  const pythonProcess = spawn('python', ['../Python/ImageProcessing.py', image]);
+  const pythonProcess = spawn('python', ['/Python/ImageProcessing.py', image]);
 
   // Process the output from the Python script
   pythonProcess.stdout.on('data', (data) => {

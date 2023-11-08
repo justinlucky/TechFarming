@@ -74,7 +74,7 @@
 
 .services-content-list .services-content-list-center ul li .service-content .cost{
     color: var(--button-text);
-    font-size: x-large;
+    font-size: large;
     text-align: center;
 }
 

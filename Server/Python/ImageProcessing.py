@@ -1,5 +1,6 @@
 import tensorflow as tf
 import numpy as np
+import matplotlib.pyplot as plt
 
 # Load the trained CNN model (replace 'model_path' with the actual path to your model)
 model_path = 'path/to/your/model'
@@ -35,3 +36,11 @@ print(f'Predicted class: {predicted_class}')
 print('Recommendations:')
 for category, items in recommendations.items():
     print(f'{category}: {", ".join(items)}')
+
+
+#images in graphical
+for i in range(len(images)):
+    plt.figure()
+    plt.imshow(images[i])  # Display the image
+    plt.title(f'Predicted Label: {labels[i]}')  # Display the predicted label
+    plt.show()

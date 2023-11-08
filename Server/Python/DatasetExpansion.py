@@ -1,4 +1,5 @@
 import os
+import csv
 from PIL import Image
 import shutil
 
@@ -8,6 +9,9 @@ new_data_path = "path_to_new_data"
 
 # Create a list of labels or categories for the new data
 new_data_labels = ["label1", "label2", "label3"]
+
+# Create a dictionary to store the counts for each label
+label_counts = {label: 0 for label in new_data_labels}
 
 # Loop through the new data and organize it into the existing dataset structure
 for label in new_data_labels:
@@ -26,6 +30,15 @@ for label in new_data_labels:
             # Copy or move the image to the label folder
             shutil.copy(image_path, new_image_path)
             
-            # You can also perform data augmentation or preprocessing here if necessary
+            # Update the label count
+            label_counts[label] += 1
 
-# Your dataset is now expanded with new data
+# Save the counts to separate CSV files
+for label, count in label_counts.items():
+    csv_file = f"{label}_counts.csv"
+    with open(csv_file, mode='w', newline='') as file:
+        writer = csv.writer(file)
+        writer.writerow(['Label', 'Count'])
+        writer.writerow([label, count])
+
+# Your dataset is now expanded with new data, and you have separate CSV files for label counts

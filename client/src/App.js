@@ -1,5 +1,5 @@
 import './App.css';
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Index from './Pages/Index/Index';
 import Home from './Pages/Home/Home';
 import About from './Pages/About/About';
@@ -27,6 +27,14 @@ import SellerSignUp from './Pages/SignUp/SellerSignUp/SellerSignUp';
 import Services from './Pages/Services/Services';
 import AiMlServices from './Pages/Services/AIMLService/AiMlServices';
 import BookingServices from './Pages/Services/BookingServices/BookingServices';
+import Aquaponics from './Pages/Services/Aquaponics/Aquaponics';
+import GreenHouse from './Pages/Services/GreenHouse/GreenHouse';
+import SoilTesting from './Pages/Services/SoilTesting/SoilTesting';
+import WeedControl from './Pages/Services/WeedControl/WeedControl';
+import PestScanning from './Pages/Services/PestScanning/PestScanning';
+import Hydroponics from './Pages/Services/Hydroponics/Hydroponics';
+import Cart from './Pages/Cart/Cart';
+import Payment from './Pages/Payment/Payment';
 
 
 function App() {
@@ -47,7 +55,7 @@ function App() {
               <Route path='/login' Component={Login}></Route>
               <Route path='/api/login/sellers' Component={SellerSignIn}></Route>
               <Route path='/api/signup/users' Component={Signup}></Route>
-              <Route path='/api/signup/sellers' Component={SellerSignUp}/>
+              <Route path='/api/signup/sellers' Component={SellerSignUp} />
               <Route path='/api/signup/membership' Component={MemberSignUp}></Route>
               <Route path='/api/signup/admin' Component={AdminSignUp}></Route>
               <Route path='/dashboard' Component={Dashboard}></Route>
@@ -62,8 +70,16 @@ function App() {
               <Route path='/category' Component={Category}></Route>
               <Route path='/testimonials' Component={Testimonials}></Route>
               <Route path='/services' Component={Services}></Route>
-              <Route path='/services/ai-and-ml-services' Component={AiMlServices}/>
-              <Route path='/services/booking-services' Component={BookingServices}/>
+              <Route path='/services/ai-and-ml-services' Component={AiMlServices} />
+              <Route path='/services/aquaphonic' Component={Aquaponics} />
+              <Route path='/services/booking-services' Component={BookingServices} />
+              <Route path='/services/green-house' Component={GreenHouse} />
+              <Route path='/services/soil-testing' Component={SoilTesting} />
+              <Route path='/services/weed-control' Component={WeedControl} />
+              <Route path='/services/pest-scanning' Component={PestScanning} />
+              <Route path='/services/hydroponics' Component={Hydroponics} />
+              <Route path='/cart' Component={Cart}/>
+              <Route path='/payment' Component={Payment}/>
             </Routes>
           </section>
         </div>
