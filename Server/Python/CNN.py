@@ -4,23 +4,14 @@ from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense
 
-# Function to check if a crop is ready for harvest
 def is_harvest_ready(start_date, growing_days):
-    # Convert the start_date to a datetime object (you can adjust the date format)
     start_date = datetime.strptime(start_date, "%Y-%m-%d")
-    
-    # Get the current date
     current_date = datetime.now()
-    
-    # Calculate the time elapsed in days
     days_elapsed = (current_date - start_date).days
-    
-    # Compare with growing days requirement
     return days_elapsed >= growing_days
 
-# Example crop information
-start_date = "2023-04-01"  # Replace with your actual start date
-growing_days_required = 90  # Replace with the specific crop's growing days requirement
+start_date = "2023-04-01"  
+growing_days_required = 90  
 
 # Check if the crop is ready for harvest
 if is_harvest_ready(start_date, growing_days_required):
@@ -28,7 +19,6 @@ if is_harvest_ready(start_date, growing_days_required):
 else:
     print("The crop needs more time to grow.")
 
-# Set the path to your dataset containing crop images organized into classes
 dataset_path = "path/to/your/dataset"
 
 # Define the number of classes (crop types)
