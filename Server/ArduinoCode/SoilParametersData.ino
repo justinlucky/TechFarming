@@ -6,12 +6,12 @@
 #include <ESP8266WiFi.h>
 #include <ESP8266HTTPClient.h>
 
-SoftwareSerial espSerial(2, 3);  // RX, TX (connect ESP8266 TX to Arduino D2, and RX to D3)
-DHT dht(7, DHT22);  // DHT sensor connected to pin 7
+SoftwareSerial espSerial(2, 3);  
+DHT dht(7, DHT22);
 
 const char* ssid = "YourWiFiSSID";
 const char* password = "YourWiFiPassword";
-const char* serverUrl = "http://yourwebsite.com/api/soil-data";  // Replace with your website URL
+const char* serverUrl = "http://yourwebsite.com/api/soil-data"; 
 
 void setup() {
   Serial.begin(9600);
@@ -31,45 +31,49 @@ void loop() {
   float humidity = dht.readHumidity();
 
   // Read data from other soil sensors
-  float npkValue = readNPKSensor();  // Implement this function based on your NPK sensor
-  float phValue = readPHSensor();    // Implement this function based on your pH sensor
-  float moistureValue = readMoistureSensor();  // Implement this function based on your moisture sensor
-  float waterValue = readWaterSensor();    // Implement this function based on your water sensor
+  float npkValue = readNPKSensor();  
+  float phValue = readPHSensor();  
+  float moistureValue = readMoistureSensor();
+  float waterValue = readWaterSensor();
 
   if (isnan(temperature) || isnan(humidity)) {
     Serial.println("Failed to read from DHT sensor");
     return;
   }
 
-  String data = String("temperature=") + temperature +
-                "&humidity=" + humidity +
-                "&npk=" + npkValue +
-                "&ph=" + phValue +
-                "&moisture=" + moistureValue +
-                "&water=" + waterValue;
+  String data = "temperature=" + String(temperature) +
+                "&humidity=" + String(humidity) +
+                "&npk=" + String(npkValue) +
+                "&ph=" + String(phValue) +
+                "&moisture=" + String(moistureValue) +
+                "&water=" + String(waterValue);
 
   sendDataToServer(data);
-  delay(60000);  // Send data every minute
+  delay(60000); 
 }
 
 float readNPKSensor() {
-  // Implement code to read data from your NPK sensor
-  // Return the NPK value
+  int npkSensorValue = analogRead(A1);
+  float npkValue = map(npkSensorValue, 0, 1023, 0, 10);
+  return npkValue;
 }
 
 float readPHSensor() {
-  // Implement code to read data from your pH sensor
-  // Return the pH value
+  int phSensorValue = analogRead(A2);
+  float phValue = map(phSensorValue, 0, 1023, 0, 14); 
+  return phValue;
 }
 
 float readMoistureSensor() {
-  // Implement code to read data from your moisture sensor
-  // Return the moisture value
+  int moistureSensorValue = analogRead(A3);
+  float moistureValue = map(moistureSensorValue, 0, 1023, 0, 100); 
+  return moistureValue;
 }
 
 float readWaterSensor() {
-  // Implement code to read data from your water sensor
-  // Return the water level value
+  int waterSensorValue = analogRead(A4);
+  float waterValue = map(waterSensorValue, 0, 1023, 0, 100);
+  return waterValue;
 }
 
 void sendDataToServer(String data) {

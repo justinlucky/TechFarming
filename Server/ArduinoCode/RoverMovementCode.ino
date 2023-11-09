@@ -6,90 +6,196 @@
 #include <ESP8266WiFi.h>
 #include <ESP8266HTTPClient.h>
 
-SoftwareSerial voiceSerial(10, 11); // Voice control module pins
+SoftwareSerial voiceSerial(10, 11);
 
 Adafruit_MotorShield AFMS = Adafruit_MotorShield();
-Adafruit_DCMotor *leftMotor = AFMS.getMotor(1);
-Adafruit_DCMotor *rightMotor = AFMS.getMotor(2);
+Adafruit_DCMotor *frontLeftMotor = AFMS.getMotor(1);
+Adafruit_DCMotor *frontRightMotor = AFMS.getMotor(2);
+Adafruit_DCMotor *backLeftMotor = AFMS.getMotor(3);
+Adafruit_DCMotor *backRightMotor = AFMS.getMotor(4);
+Adafruit_DCMotor *additionalLeftMotor = AFMS.getMotor(5);
+Adafruit_DCMotor *additionalRightMotor = AFMS.getMotor(6);
 
-Servo cameraServo; // Camera servo control
+const int buzzer = 9;
+const int additionalMotorSwitchPin = 7;
+Servo cameraServo;
 
-const char* ssid = "YourWiFiSSID";
-const char* password = "YourWiFiPassword";
+const char *ssid = "YourWiFiSSID";
+const char *password = "YourWiFiPassword";
 const String serverUrl = "http://yourserver.com/api/rover-control";
 
-// Add libraries for LiDAR, GPS, and computer vision here
-
-void setup() {
+void setup()
+{
   AFMS.begin();
-  leftMotor->setSpeed(255);
-  rightMotor->setSpeed(255);
+  frontLeftMotor->setSpeed(255);
+  frontRightMotor->setSpeed(255);
+  backLeftMotor->setSpeed(255);
+  backRightMotor->setSpeed(255);
   voiceSerial.begin(9600);
   cameraServo.attach(9);
-  
+
+  // Set up additional motor switch
+  pinMode(additionalMotorSwitchPin, INPUT);
+  pinMode(buzzer, OUTPUT);
+
+
   // Connect to WiFi
   WiFi.begin(ssid, password);
-  while (WiFi.status() != WL_CONNECTED) {
+  while (WiFi.status() != WL_CONNECTED)
+  {
     delay(1000);
     Serial.println("Connecting to WiFi...");
   }
   Serial.println("Connected to WiFi");
-  
+
   // Initialize LiDAR, GPS, and computer vision components here
 }
 
-void loop() {
+void loop()
+{
   // Check for voice commands
-  if (voiceSerial.available() > 0) {
+  if (voiceSerial.available() > 0)
+  {
     String voiceCommand = voiceSerial.readStringUntil('\n');
     processVoiceCommand(voiceCommand);
   }
 
-  // Check for manual control input
-  // Implement manual control logic here
-  // For example, you can use a Bluetooth controller
+  // Implement autonomous navigation using computer vision, LiDAR, and GPS
+  // Add code to handle motor control based on the autonomous navigation results
 
-  // Implement computer vision for obstacle and crop detection
-  // Use LiDAR data for obstacle avoidance
-  // Use GPS data for navigation
-
-  // Implement IoT control for remote operation
-  // For example, send HTTP requests to control the rover remotely
-  // via your server or an IoT platform
-
-  // Implement autonomous navigation using ROS or custom algorithms
-  // For motor control, use functions like moveForward, moveBackward, turnLeft, turnRight
+  // Check the additional motor switch state
+  if (digitalRead(additionalMotorSwitchPin) == HIGH)
+  {
+    activateAdditionalMotors();
+    additionalLeftMotor->setSpeed(255);
+    additionalRightMotor->setSpeed(255);
+  }
 }
 
-void processVoiceCommand(String command) {
-  // Implement voice command processing logic
-  // Recognize voice commands and call appropriate motor control functions
+void processVoiceCommand(String command)
+{
+  command.toLowerCase();
+
+  if (command.startsWith("hope"))
+  {
+    if (command.indexOf("move forward") != -1)
+    {
+      moveForward();
+    }
+    else if (command.indexOf("backward") != -1)
+    {
+      moveBackward();
+    }
+    else if (command.indexOf("turn right") != -1)
+    {
+      turnRight();
+    }
+    else if (command.indexOf("turn left") != -1)
+    {
+      turnLeft();
+    }
+    else if (command.indexOf("stop") != -1)
+    {
+      stop();
+    }
+    else if (command.indexOf("sound horn") != -1)
+    {
+      soundHorn();
+    }
+  }
+  else if (command.startsWith("hope! this is lucky your master, good morning"))
+  {
+    greetMaster();
+  }
 }
 
-void moveForward() {
-  leftMotor->run(FORWARD);
-  rightMotor->run(FORWARD);
+void greetMaster()
+{
+  // Implement actions when the master is greeted
+  // For example, you can make the rover respond in some way
 }
 
-void moveBackward() {
-  leftMotor->run(BACKWARD);
-  rightMotor->run(BACKWARD);
+void soundHorn()
+{
+  for (int i = 0; i < 3; ++i) {
+    tone(buzzer, 1000);
+    delay(3000);
+    noTone(buzzer);
+    delay(2000);
+  }
 }
 
-void turnLeft() {
-  leftMotor->run(BACKWARD);
-  rightMotor->run(FORWARD);
+void moveForward()
+{
+  frontLeftMotor->run(FORWARD);
+  frontRightMotor->run(FORWARD);
+  backLeftMotor->run(FORWARD);
+  backLeftMotor->run(FORWARD);
 }
 
-void turnRight() {
-  leftMotor->run(FORWARD);
-  rightMotor->run(BACKWARD);
+void moveBackward()
+{
+  frontLeftMotor->run(BACKWARD);
+  frontRightMotor->run(BACKWARD);
+  backRightMotor->run(BACKWARD);
+  backRightMotor->run(BACKWARD);
 }
 
-// Implement functions for LiDAR, GPS, and computer vision here
+void turnLeft()
+{
+  frontLeftMotor->run(BACKWARD);
+  frontRightMotor->run(FORWARD);
+  backLeftMotor->run(BACKWARD);
+  backRightMotor->run(FORWARD);
+}
 
-// Implement IoT communication functions here
-void sendRoverControlRequest(String command) {
+void turnRight()
+{
+  frontLeftMotor->run(FORWARD);
+  frontRightMotor->run(BACKWARD);
+  backLeftMotor->run(FORWARD);
+  backRightMotor->run(BACKWARD);
+}
+
+void stop()
+{
+  frontLeftMotor->run(RELEASE);
+  frontRightMotor->run(RELEASE);
+  backLeftMotor->run(RELEASE);
+  backRightMotor->run(RELEASE);
+}
+
+void activateAdditionalMotors()
+{
+  void moveForward()
+  {
+    additionalLeftMotor->run(FORWARD);
+    additionalRightMotor->run(FORWARD);
+  }
+  void moveBackward()
+  {
+    additionalLeftMotor->run(BACKWARD);
+    additionalRightMotor->run(BACKWARD);
+  }
+  void turnLeft()
+  {
+    additionalLeftMotor->run(BACKWARD);
+    additionalRightMotor->run(FORWARD);
+  }
+  void turnRight()
+  {
+    additionalLeftMotor->run(FORWARD);
+    additionalLeftMotor->run(BACKWARD);
+  }
+  void stop()
+  {
+    additionalLeftMotor->run(RELEASE);
+    additionalRightMotor->run(RELEASE);
+  }
+}
+
+void sendRoverControlRequest(String command)
+{
   HTTPClient http;
   http.begin(serverUrl);
   http.addHeader("Content-Type", "application/json");
@@ -97,4 +203,3 @@ void sendRoverControlRequest(String command) {
   int httpResponseCode = http.POST(requestBody);
   http.end();
 }
-
