@@ -35,6 +35,7 @@ import PestScanning from './Pages/Services/PestScanning/PestScanning';
 import Hydroponics from './Pages/Services/Hydroponics/Hydroponics';
 import Cart from './Pages/Cart/Cart';
 import Payment from './Pages/Payment/Payment';
+import Forum from './Pages/Forum/Forum';
 
 
 function App() {
@@ -80,6 +81,7 @@ function App() {
               <Route path='/services/hydroponics' Component={Hydroponics} />
               <Route path='/cart' Component={Cart}/>
               <Route path='/payment' Component={Payment}/>
+              <Route path='/community-forum' Component={Forum}/>
             </Routes>
           </section>
         </div>

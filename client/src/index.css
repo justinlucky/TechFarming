@@ -42,6 +42,7 @@ p::selection, h1::selection, h2::selection, h3::selection, h4::selection{
   --background-opacity: rgba(255, 255, 255, 0.8);
   --background-dark: #1f1f1f;
   --text-light: #333;
+  --text-light1: #111;
   --color-gold:#f3e280;
   --color-gold1: #f8d929;
   --text-dark: #f3f3f3;
