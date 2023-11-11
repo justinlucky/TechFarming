@@ -24,7 +24,7 @@
 }
 
 .services-content-list .services-content-list-top input{
-    height: 32px;
+    height: 30px;
     padding: 5px 20px;
     flex: 1;
     border-radius: 27px;
@@ -45,17 +45,17 @@
     justify-content: center;
     gap: 50px;
     margin-top: 50px;
-    margin-left: -40px;
+    margin-left: -30px;
 }
 
 .services-content-list .services-content-list-center ul li{
-    width: 320px;
-    padding: 25px 20px;
+    width: 300px;
+    padding: 20px 15px;
     position: relative;
     cursor: pointer;
     background-color: var(--background-color11);
     cursor: pointer;
-    border-radius: 30px;
+    border-radius: 20px;
 }
 
 .services-content-list .services-content-list-center ul li .divider{
@@ -83,8 +83,8 @@
     position: absolute;
     top: 0;
     right: 0;
-    height: 70px;
-    width: 70px;
+    height: 50px;
+    width: 50px;
     padding: 10px;
     border-radius: 50%;
     display: flex;
@@ -92,9 +92,9 @@
     justify-content: center;
     color: var(--text-dark);
     text-align: center;
-    margin-top: -40px;
-    margin-right: -40px;
-    font-size: small;
+    margin-top: -20px;
+    margin-right: -20px;
+    font-size: x-small;
 }
 
 .services-content-list .services-content-list-center ul li .services-image img{
@@ -151,8 +151,8 @@
     }
     
     .services-content-list .services-content-list-center ul li{
-        width: 310px;
-        padding: 25px 20px;
+        width: 300px;
+        padding: 20px 15px;
         position: relative;
         background-color: var(--background-color11);
     }
@@ -181,7 +181,7 @@
     
     .services-content-list .services-content-list-center ul li{
         width: 300px;
-        padding: 25px;
+        padding: 20px;
         position: relative;
         background-color: var(--background-color11);
     }
@@ -206,7 +206,7 @@
         justify-content: center;
     } 
     .services-content-list .services-content-list-top input{
-        height: 30px;
+        height: 27px;
         padding: 10px 15px;
         flex: 1;
         border-radius: 27px;
@@ -229,8 +229,8 @@
         position: absolute;
         top: 0;
         right: 0;
-        height: 60px;
-        width: 60px;
+        height: 50px;
+        width: 50px;
         padding: 7px;
         border-radius: 50%;
         display: flex;
@@ -266,8 +266,8 @@
         position: absolute;
         top: 0;
         right: 0;
-        height: 60px;
-        width: 60px;
+        height: 50px;
+        width: 50px;
         padding: 7px;
         border-radius: 50%;
         display: flex;
@@ -278,6 +278,13 @@
         margin-top: -10px;
         margin-right: -10px;
         font-size: small;
+    }
+    
+    .services-content-list .services-content-list-center ul li{
+        width: 280px;
+        padding: 15px;
+        position: relative;
+        background-color: var(--background-color11);
     }
 }
 

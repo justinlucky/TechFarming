@@ -77,5 +77,6 @@ p::selection, h1::selection, h2::selection, h3::selection, h4::selection{
   --color-aqua: aqua;
   --color-navy:rgb(5, 5, 100);
   --color-overlay: rgba(20,20,20,0.5);
+  --color-overlay1: rgba(20,20,20,0.9);
   --color-bisque: #f3dfc8;
 }

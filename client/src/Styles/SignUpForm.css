@@ -44,7 +44,6 @@
 
 #user-sign-up .outer-container .member-sign-up{
     flex: 1;
-    padding: 25px 20px;
     background-color: var(--background-color11);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
     height: 100vh;
@@ -76,13 +75,17 @@
     color: var(--light-gray);
 }
 
+#user-sign-up .outer-container .member-sign-up .text-box{
+    padding: 10px 25px;
+}
+
 #user-sign-up .outer-container .member-sign-up .text-box h3{
     color: var(--light-gray);
 }
 
 #user-sign-up .outer-container .member-sign-up .text-box .typewriter-effect h1{
     text-align: center;
-    color: #fff;
+    color: var(--button-tertiary-background);
     font-weight: bold;
 }
 
@@ -491,7 +494,7 @@ input[type="date"]:focus{
 
     #user-sign-up .outer-container .member-sign-up{
         padding: 20px 10px;
-        background-image: linear-gradient(60deg, navy,purple,darkblue,rgb(140, 5, 140));
+        background-image: var(--background-color11);
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
         width: 100%;
     }
@@ -594,8 +597,9 @@ input[type="date"]:focus{
     
     #user-sign-up .outer-container .member-sign-up{
         flex: 1;
-        padding: 30px 10px;
-        background-image: linear-gradient(60deg, navy,purple,darkblue,rgb(140, 5, 140));
+        padding: 30px 20px;
+        background-image: var(--background-color11);
+        height: 100vh;
     }
     
     #user-sign-up .outer-container .member-sign-up .button{
@@ -831,7 +835,7 @@ input[type="date"]:focus{
     }
     
     #user-sign-up .outer-container .container .social-sign-ask .social-icons li:nth-child(1){
-        background-image: linear-gradient(90deg, blue, violet,purple);
+        background-color: var(--background-color11);
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
         cursor: pointer;
         background-size: 200% 100%;
@@ -886,7 +890,7 @@ input[type="date"]:focus{
     }
     #user-sign-up .outer-container .container .social-sign-ask .social-icons a .social-icons-line{
         border-radius: 50%;
-        background-color: white;
+        background-color: var(--button-text);
         height: 23px;
         width: 23px;
         display: flex;

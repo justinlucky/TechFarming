@@ -59,7 +59,7 @@
     flex-direction: column;
     padding: 25px 20px;
     gap: 10px;
-    width: 320px;
+    width: 300px;
     border-radius: 10px;
     border: 1px solid var(--background-color4);
     background-color: var(--background-color11);
@@ -68,7 +68,7 @@
 }
 
 .home-container-content-pricing .home-container-content-pricing-bottom .pricing-plans-list>li:hover{
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 
 .home-container-content-pricing .home-container-content-pricing-bottom .pricing-plans-list>li .describe{
@@ -193,7 +193,7 @@
         flex-direction: column;
         padding: 20px 15px;
         gap: 10px;
-        width: 330px;
+        width: 300px;
         border-radius: 10px;
         border: 1px solid var(--background-color4);
         background-color: var(--background-color11);
@@ -223,7 +223,7 @@
         flex-direction: column;
         padding: 20px 15px;
         gap: 10px;
-        width: 300px;
+        width: 280px;
         border-radius: 10px;
         border: 1px solid var(--background-color4);
         background-color: var(--background-color11);

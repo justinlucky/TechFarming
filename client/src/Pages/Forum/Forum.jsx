@@ -1,13 +1,14 @@
 import React from 'react'
 import { ChatEngineWrapper, ChatEngine } from 'react-chat-engine'
 import {notification} from 'antd'
+import '../../Styles/Forum.css';
 
 import './Custom.css'
 
 const Forum = () => {
 
   return (
-    <div className=''>
+    <div id='forum'>
       <ChatEngineWrapper>
         <ChatEngine
           projectID='72dbef21-d794-4131-bf56-ad5b29e75576'

@@ -45,7 +45,6 @@
 }
 
 #user-log-in .outer-container .member-sign-up {
-    padding: 20px 25px;
     flex: 1;
     flex-direction: column;
     display: flex;
@@ -81,9 +80,17 @@
     color: var(--light-gray);
 }
 
+#user-log-in .outer-container .member-sign-up .text-box{
+    padding: 20px 25px;
+}
+
 #user-log-in .outer-container .member-sign-up .text-box .typewriter-effect h3 {
     text-align: center;
     color: #fff;
+}
+
+#user-log-in .outer-container .member-sign-up .text-box .advantages-of-membership h3{
+    color: var(--button-text);
 }
 
 #user-log-in .outer-container .member-sign-up .text-box .advantages-of-membership ul li {
@@ -93,7 +100,11 @@
 
 #user-log-in .outer-container .member-sign-up .text-box .advantages-of-membership ul li span {
     font-size: larger;
-    color: #eee;
+    color: var(--text-dark);
+}
+
+#user-log-in .outer-container .member-sign-up .text-box .request-to-be-member{
+    color: var(--button-text);
 }
 
 #user-log-in .outer-container .container {

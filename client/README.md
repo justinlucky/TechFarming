@@ -68,3 +68,19 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### This is a section to mention the information about the chat engine :[https://chatengine.io/docs/react/v1]
+### Getting started :[https://chatengine.io/docs/react/v1/getting_started]
+### Directly Connect :[https://chatengine.io/docs/react/v1/tutorials/direct_messages]
+### Marketplace :[https://chatengine.io/docs/react/v1/tutorials/marketplace]
+### Chat Feed :[https://chatengine.io/docs/react/v1/tutorials/chatfeeds]
+### Render Functions:[https://chatengine.io/docs/react/v1/customize_ui/render_functions]
+### Customizing CSS:[https://chatengine.io/docs/react/v1/customize_ui/custom_css]
+### COnnecting to Backend: [https://chatengine.io/docs/react/v1/backend]
+### REST API: [https://chatengine.io/docs/react/v1/server_rest]
+### Socket: [https://chatengine.io/docs/react/v1/sockets]
+### Context API: [https://chatengine.io/docs/react/v1/context_api]
+### Event Hooks: [https://chatengine.io/docs/react/v1/event_hooks]
+### Webhooks: [https://chatengine.io/docs/react/v1/webhooks]
+### Timezones: [https://chatengine.io/docs/react/v1/timezones]
+
