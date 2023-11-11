@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Logo from '../../Assets/Images/Logo.jpg';
 import Typewriter from 'typewriter-effect';
 import '../../Styles/SignUpForm.css';
+import {useAuth} from '../Dashboard/AuthContext';
 
 import {
   FaArrowRight,
@@ -25,6 +26,7 @@ const initialFormData = {
 };
 
 const SignUp = () => {
+  const {login} = useAuth();
   const [formData, setFormData] = useState(initialFormData);
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
@@ -76,6 +78,7 @@ const SignUp = () => {
         // Signup successful, you can redirect or show a success message
         setFormData(initialFormData);
         setSignupUser(formData.name);
+        login(formData.name);
         console.log('Signup successful');
       } else {
         // Signup failed, handle the error

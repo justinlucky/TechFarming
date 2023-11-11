@@ -36,6 +36,7 @@ import Hydroponics from './Pages/Services/Hydroponics/Hydroponics';
 import Cart from './Pages/Cart/Cart';
 import Payment from './Pages/Payment/Payment';
 import Forum from './Pages/Forum/Forum';
+import WithLogin from './Pages/Dashboard/WithLogin';
 
 
 function App() {
@@ -82,6 +83,7 @@ function App() {
               <Route path='/cart' Component={Cart}/>
               <Route path='/payment' Component={Payment}/>
               <Route path='/community-forum' Component={Forum}/>
+              <Route path='/dashboard/with-login' Component={WithLogin}/>
             </Routes>
           </section>
         </div>

@@ -177,7 +177,7 @@
 }
 
 .home-container-content-connect .home-container-content-connect-bottom .community-links li{
-    width: 320px;
+    width: 300px;
     padding: 25px 20px;
     display: flex;
     flex-direction: column;
@@ -293,7 +293,7 @@
 
 @media only screen and (max-width: 768px) {
     .home-container-content-connect .home-container-content-connect-bottom .community-links li{
-        width: 300px;
+        width: 280px;
         padding: 20px 15px;
         display: flex;
         flex-direction: column;

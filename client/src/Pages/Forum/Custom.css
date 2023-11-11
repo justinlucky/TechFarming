@@ -1,3 +1,8 @@
+::-webkit-scrollbar {
+    width: 10px; 
+    background: var(--button-tertiary-background) !important; 
+}
+
 .ce-chat-list-column {
     background-color: var(--background-color11) !important;
     box-sizing: border-box;
@@ -63,8 +68,14 @@
 
 .ce-chat-card {
     cursor: pointer;
-    background-color: var(--light-gray);
+    background-color: var(--light-gray) !important;
     border-radius: 12px;
+    margin-top: 10px !important;
+    transition: all .3s ease-in-out;
+}
+
+.ce-chat-card:hover{
+    background-color: var(--primary-color) !important;
 }
 
 .ce-active-chat-card {
@@ -473,7 +484,6 @@
     border: none;
     cursor: pointer;
     display: inline-block;
-    float: left;
     height: 24px;
     padding: 4px 5px;
     width: 28px;

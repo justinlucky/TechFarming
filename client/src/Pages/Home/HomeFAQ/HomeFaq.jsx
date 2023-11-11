@@ -51,7 +51,7 @@ const HomeFaq = () => {
                 </p>
                 <div className="links">
                     <Link to='/#'>Chat with Assistance<FaCaretRight/></Link>
-                    <Link to='/#'>Get your doubt to our Forum<FaCaretRight/></Link>
+                    <Link to='/community-forum'>Get your doubt to our Forum<FaCaretRight/></Link>
                 </div>
             </div>
             <div className="home-container-content-faq-right">
