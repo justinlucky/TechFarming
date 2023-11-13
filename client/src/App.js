@@ -37,6 +37,7 @@ import Cart from './Pages/Cart/Cart';
 import Payment from './Pages/Payment/Payment';
 import Forum from './Pages/Forum/Forum';
 import WithLogin from './Pages/Dashboard/WithLogin';
+import SellerDashboard from './Pages/Dashboard/SellerDashboard/SellerDashboard';
 
 
 function App() {
@@ -84,6 +85,7 @@ function App() {
               <Route path='/payment' Component={Payment}/>
               <Route path='/community-forum' Component={Forum}/>
               <Route path='/dashboard/with-login' Component={WithLogin}/>
+              <Route path='/dashboard/seller-dashboard' Component={SellerDashboard}/>
             </Routes>
           </section>
         </div>

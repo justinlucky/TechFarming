@@ -60,7 +60,7 @@
 
 .services-content-list .services-content-list-center ul li .divider{
     background-image: var(--linear-gradient2);
-    height: 5px;
+    height: 2px;
 }
 
 .services-content-list .services-content-list-center ul li .service-content h3{
@@ -111,7 +111,7 @@
 .services-content-list .services-content-list-center ul li .links{
     margin-top: 30px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .services-content-list .services-content-list-center ul li .services-image h3{

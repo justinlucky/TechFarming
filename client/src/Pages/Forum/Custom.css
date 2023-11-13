@@ -1,6 +1,6 @@
 ::-webkit-scrollbar {
     width: 10px; 
-    background: var(--button-tertiary-background) !important; 
+    background: var(--primary-color) !important; 
 }
 
 .ce-chat-list-column {
@@ -26,6 +26,7 @@
     overflow: hidden scroll;
     border-right: 1px solid rgb(175, 175, 175);
     font-family: Avenir;
+    padding: 0px 5px !important;
 }
 
 .ce-chats-container {

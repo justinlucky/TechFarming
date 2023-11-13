@@ -13,9 +13,9 @@ const OurGrowth = () => {
 
     const achievements = [
         {
-            year: 'Dec-2024',
-            title: 'Added ML-Server',
-            description: 'Where are you?',
+            year: '22-Dec-2024',
+            title: 'Beginning the mark of TechFarming',
+            description: 'At TechFarming, we envision a future where agriculture seamlessly integrates with technology, empowering farmers and transforming the landscape of sustainable farming.',
         },
         {
             year: 'Dec-2024',

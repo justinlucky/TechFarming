@@ -1,0 +1,20 @@
+@media (min-width: 1660px) {
+    #forum {
+        width: 85%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1700px) {
+    #forum {
+        width: 75%;
+        margin: 0 auto;
+    }
+}
+
+
+@media (min-width: 2560px) {
+    #forum {
+        width: 70%;
+    }
+}

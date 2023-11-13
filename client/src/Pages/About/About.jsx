@@ -12,12 +12,14 @@ import AboutNav from './AboutNav/AboutNav';
 import OurGrowth from './OurGrowth/OurGrowth';
 import Technology from './Technology/Technology';
 import AboutUs from './AboutUs/AboutUs';
+import Chatbot from '../../Components/Chat/ChatBot';
 
 const About = () => {
   return (
     <div id='about'>
       <Header />
       <SocialMediaAside />
+      <Chatbot/>
       <div className="about-main">
         <div className="about-header">
           <div className="about-header-overlay">
@@ -43,19 +45,19 @@ const About = () => {
         </div>
         <div className="about-contents">
           <div className="about-main-content">
-            <AboutUs/>
+            <AboutUs />
           </div>
           <div className="about-main-content">
-          <AboutContent1 />
+            <AboutContent1 />
           </div>
           <div className="about-main-content">
-          <OurGrowth/>
+            <OurGrowth />
           </div>
           <div className="about-main-content">
-          <Articles />
+            <Articles />
           </div>
           <div className="about-main-content">
-          <Technology/>
+            <Technology />
           </div>
           <div className="about-main-content">
             <AboutNav />
