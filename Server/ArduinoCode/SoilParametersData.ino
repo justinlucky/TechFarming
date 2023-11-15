@@ -11,7 +11,7 @@ DHT dht(7, DHT22);
 
 const char* ssid = "YourWiFiSSID";
 const char* password = "YourWiFiPassword";
-const char* serverUrl = "http://yourwebsite.com/api/soil-data"; 
+const char* serverUrl = "http://localhost:9000/api/soil-data"; 
 
 void setup() {
   Serial.begin(9600);

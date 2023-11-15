@@ -22,7 +22,7 @@ Servo cameraServo;
 
 const char *ssid = "YourWiFiSSID";
 const char *password = "YourWiFiPassword";
-const String serverUrl = "http://yourserver.com/api/rover-control";
+const String serverUrl = "http://localhost:9000/api/rover-control";
 
 void setup()
 {
@@ -59,6 +59,15 @@ void loop()
     String voiceCommand = voiceSerial.readStringUntil('\n');
     processVoiceCommand(voiceCommand);
   }
+
+  void checkServerCommands() {
+  // Implement code to check for commands from the server
+  // Example: You can use the HTTPClient to send a request to the server
+  // and parse the response to get the rover control command.
+  // Use the sendRoverControlRequest function for communication.
+}
+
+   checkServerCommands();
 
   // Implement autonomous navigation using computer vision, LiDAR, and GPS
   // Add code to handle motor control based on the autonomous navigation results

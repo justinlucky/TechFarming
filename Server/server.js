@@ -91,6 +91,54 @@ app.get('/api/sellers', (req, res) => {
   });
 });
 
+//rover controlling path
+app.get('/rover-control', (req, res) => {
+  res.sendFile(__dirname + '/ArduinoCode/ControllingPage.html');
+});
+
+// Add these routes to handle rover control commands
+app.post('/api/rover-control', (req, res) => {
+  const { command, value } = req.query;
+
+  switch (command) {
+    case 'moveForward':
+    // Implement moveForward functionality
+    break;
+
+    case 'moveBackward':
+    // Implement moveBackward functionality
+    break;
+
+    case 'turnRight':
+    // Implement turnRight functionality
+    break;
+
+    case 'turnLeft':
+    // Implement turnLeft functionality
+    break;
+
+    case 'stop':
+    // Implement stop functionality
+    break;
+
+    case 'activateAdditionalMotors':
+    // Implement activateAdditionalMotors functionality
+    break;
+
+    case 'adjustCamera':
+    // Implement adjustCamera functionality using the provided value
+    break;
+
+    default:
+      // Handle unsupported commands
+      res.status(400).json({ error: 'Invalid command' });
+  }
+
+  // Send a response (if needed)
+  res.json({ message: 'Command received' });
+});
+
+
 //Getting user sign up details
 //Only for user sign up not seller
 app.post('/api/users/signup', async (req, res) => {
