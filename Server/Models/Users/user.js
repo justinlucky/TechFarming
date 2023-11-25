@@ -5,6 +5,8 @@ const userSchema = new mongoose.Schema({
     email: String,
     password: String,
     mobile: String,
+    profile_pic: String,
+    date_of_birth: Date,
     is_verified: Boolean,
     is_admin: Boolean,
     is_seller: Boolean,
