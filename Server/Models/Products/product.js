@@ -15,15 +15,20 @@ const productSchema = new mongoose.Schema({
         type: Number,
         required: true,
     },
-    price_range: {
-        min: Number,
-        max: Number,
+    priceRange: {
+       type: mongoose.Schema.Types.ObjectId, 
+       ref: 'priceRange',
     },
     category: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'category',
+        required: true,
     },
-    brand: String,
+    brand: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'brand',
+        required: true,
+    },
     manufacturer: {
         name: String,
         location: {
@@ -35,10 +40,35 @@ const productSchema = new mongoose.Schema({
         type: Number,
         default: 0,
     },
-    images: {
-        image: [String],
-        image_url: [String],
-        image_alt: [String],
+    stock_quantity:{
+        type: Number,
+        default: 0,
+        required: true,
+    },
+    images: [
+        {
+            image: [String],
+            image_url: [String],
+            image_alt: [String],
+        },
+        {
+            image: [String],
+            image_url: [String],
+            image_alt: [String],
+        },
+        {
+            image: [String],
+            image_url: [String],
+            image_alt: [String],
+        },
+    ], 
+    rating: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'rating',
+    },
+    discount: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'discount',
     }
 })
 

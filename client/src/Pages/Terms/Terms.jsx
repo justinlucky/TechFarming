@@ -1,27 +1,42 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import './term.scss';
 
 const Terms = () => {
   const [formData, setFormData] = useState({
     agreeToTerms: false,
+    showConfirmation: false,
   });
 
   const handleChange = (e) => {
-    const { name, value, type, checked } = e.target;
+    const { name, type, checked } = e.target;
     setFormData({
       ...formData,
-      [name]: type === 'checkbox' ? checked : value,
+      [name]: type === 'checkbox' ? checked : formData[name],
     });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (formData.agreeToTerms) {
+      setFormData({
+        ...formData,
+        showConfirmation: true,
+      });
       console.log('User agreed to terms and conditions.');
     } else {
       console.error('User must agree to terms and conditions.');
     }
   };
+
+  const resetForm = () => {
+    // Reset the form and hide the confirmation
+    setFormData({
+      agreeToTerms: false,
+      showConfirmation: false,
+    });
+  };
+
   const TermsandCondition = [
     {
       termTitle: 'Acceptance of Terms',
@@ -115,9 +130,18 @@ const Terms = () => {
 
   return (
     <div id='terms-and-conditions'>
-      <div className="terms-container">
-        <h1>Terms and Conditions</h1>
-        <ol>
+    <div className="terms-container">
+      {formData.showConfirmation ? (
+        <div className="confirmation-box">
+          <p>Thank you for agreeing to the Terms and Conditions!</p>
+          <Link to="/dashboard" onClick={resetForm}>
+            Go to Dashboard
+          </Link>
+        </div>
+      ) : (
+        <>
+          <h1>Terms and Conditions</h1>
+          <ol>
           {TermsandCondition.map((term, index) => (
             <li key={index}>
               <h2>{term.termTitle}</h2>
@@ -135,22 +159,27 @@ const Terms = () => {
               ))}
             </li>
           ))}
-        </ol>
-        <div>
-          <input
-            type="checkbox"
-            id="agreeToTerms"
-            name="agreeToTerms"
-            checked={formData.agreeToTerms}
-            onChange={handleChange}
-            onSubmit={handleSubmit}
-          />
-          <label htmlFor="agreeToTerms">
-            I have read and agree to the <Link to="/terms-and-conditions">Terms and Conditions</Link>
-          </label>
-        </div>
-      </div>
+          </ol>
+          <div className='form'>
+            <form onSubmit={handleSubmit}>
+              <input
+                type="checkbox"
+                id="agreeToTerms"
+                name="agreeToTerms"
+                checked={formData.agreeToTerms}
+                onChange={handleChange}
+              />
+              <label htmlFor="agreeToTerms">
+                I have read and agree to the{' '}
+                <Link to="/terms-and-conditions">Terms and Conditions</Link>
+              </label>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </>
+      )}
     </div>
+  </div>
   );
 }
 

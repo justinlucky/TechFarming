@@ -170,44 +170,58 @@
             }
         ],
         "Span from seedling to harvesting": {
-            "max": 60,
-            "min": 80
+            "min": 60,
+            "max": 80
         },
-        "Primary-nutrients": {
-            "N": {
-                "min": 1,
-                "max": 3
+        "Primary-nutrients": [
+            {
+                "N": {
+                    "min": 1,
+                    "max": 3
+                }
             },
-            "P": {
-                "min": 0.3,
-                "max": 0.5
+            {
+                "P": {
+                    "min": 0.3,
+                    "max": 0.5
+                }
             },
-            "K": {
-                "min": 1.5,
-                "max": 3
+            {
+                "K": {
+                    "min": 1.5,
+                    "max": 3
+                }
             },
-            "C": {
-                "min": 45,
-                "max": 50
+            {
+                "C": {
+                    "min": 45,
+                    "max": 50
+                }
             }
-        },
-        "Secondary-nutrients": {
-            "Ca": {
-                "min": 0.2,
-                "max": 0.5
+        ],
+        "Secondary-nutrients": [
+            {
+                "Ca": {
+                    "min": 0.2,
+                    "max": 0.5
+                }
             },
-            "Mg": {
-                "min": 0.2,
-                "max": 0.5
+            {
+                "Mg": {
+                    "min": 0.2,
+                    "max": 0.5
+                }
             },
-            "S": {
-                "min": 0.2,
-                "max": 0.5
-            },
-            "Micro-nutrient": {
-                "min": 0.12,
-                "max": 0.15
+            {
+                "S": {
+                    "min": 0.2,
+                    "max": 0.5
+                }
             }
+        ],
+        "Micro-nutrient": {
+            "min": 0.12,
+            "max": 0.15
         }
     }
 ]

@@ -13,7 +13,6 @@ import {
   FaEye,
   FaEyeSlash,
 } from 'react-icons/fa';
-import SocialMediaAside from '../../Components/SocialMediaAside/SocialMediaAsside';
 import Footer1 from '../../Components/Footer/Footer1';
 
 const initialFormData = {
@@ -277,6 +276,9 @@ const SignUp = () => {
               </div>
             )}
           </form>
+          <div className="privacy-link">
+            <p>By signing up you agree to our <Link to='/terms'>Terms and Conditions.</Link></p>
+          </div>
           <div className="social-sign-up">
             <p><span></span>or<span></span></p>
             <hr />

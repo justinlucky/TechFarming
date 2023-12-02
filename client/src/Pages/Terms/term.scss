@@ -1,0 +1,66 @@
+$background-color: #150b31;
+$text-heading1: #fff;
+$text-heading2: #d1d1d1;
+$text-paragraph: #9f9f9f;
+$link-color: #f8d929;
+
+#terms-and-conditions{
+    background-color: #111;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .terms-container{
+        background-color: $background-color;
+        height: calc(100% - 50px);
+        max-width: 1000px;
+        padding: 20px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    h1{
+        color: $link-color;
+    }
+    ol{
+        list-style: lower-roman;
+        li{
+            h2{
+                color: $text-heading1;
+            }
+            p{
+                color: $text-paragraph;
+            }
+            ul{
+                li{
+                    color: $text-paragraph;
+                }
+            }
+        }
+    }
+    .form{
+        form{
+            display: flex;
+            align-items: center;
+            input{
+                height: 24px;
+            }
+            label{
+                color: $text-heading1;
+                a{
+                    color: $link-color;
+                    text-decoration: none;
+                }
+            }
+            button{
+                padding: 7px 15px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    
+}

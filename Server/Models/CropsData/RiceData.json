@@ -167,11 +167,11 @@
             "S":{
                 "min":0.1,
                 "max":0.5
-            },
-            "Micro-nutrient": {
-                "min":0.12,
-                "max":0.15
             }
+        },
+        "Micro-nutrient": {
+            "min":0.12,
+            "max":0.15
         }
     }
 ]
